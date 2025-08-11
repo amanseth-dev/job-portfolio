@@ -98,6 +98,46 @@ export const navLinks = [
   { name: 'Projects', href: '#projects' },
   { name: 'Skills', href: '#skills' },
   { name: 'Experience', href: '#experience' },
+  { name: 'Achievements', href: '#achievements' },
+  { name: 'Certifications', href: '#certifications' },
   { name: 'About', href: '#about' },
   { name: 'Contact', href: '#contact' },
+];
+
+export const achievements = [
+    {
+        description: 'Five stars in Java at Hackerrank',
+        url: 'https://www.hackerrank.com/profile/amanseth0412'
+    },
+    {
+        description: 'Four stars in Python at Hackerrank',
+        url: 'https://www.hackerrank.com/profile/amanseth0412'
+    },
+    {
+        description: 'Scored 157/175 marks in JOB-A-THON 15.0 hiring contest by GeeksForGeeks',
+        url: 'https://practice.geeksforgeeks.org/contest/job-a-thon-15-hiring-challenge-for-freshers/leaderboard'
+    }
+];
+
+export const certifications = [
+    {
+        title: 'Problem Solving',
+        issuer: 'Hackerrank',
+        url: 'https://www.hackerrank.com/certificates/693415396599'
+    },
+    {
+        title: 'Java',
+        issuer: 'Hackerrank',
+        url: 'https://www.hackerrank.com/certificates/693415396599'
+    },
+    {
+        title: 'SQL',
+        issuer: 'Hackerrank',
+        url: 'https://www.hackerrank.com/certificates/68e2da580459'
+    },
+    {
+        title: 'Python',
+        issuer: 'Hackerrank',
+        url: 'https://www.hackerrank.com/certificates/97f77bdd2534'
+    }
 ];

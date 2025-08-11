@@ -38,7 +38,7 @@ export default function GoToTop() {
         size="icon"
         onClick={scrollToTop}
         className={cn(
-          'rounded-full transition-opacity duration-300 bg-background/60 backdrop-blur-sm hover:bg-background/80',
+          'rounded-full transition-opacity duration-300 bg-background/80 backdrop-blur-[2px] hover:bg-background/90',
           isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
         )}
         variant="outline"

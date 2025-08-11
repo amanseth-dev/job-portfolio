@@ -166,11 +166,11 @@ export const achievements = [
     },
     {
         description: 'Four stars in Python at Hackerrank',
-        url: 'https://www.hackerrank.com/profile/amanseth0412'
+        url: 'https://www.hackerrank.com/profile/CS1900100100017'
     },
     {
         description: 'Scored 157/175 marks in JOB-A-THON 15.0 hiring contest by GeeksForGeeks',
-        url: 'https://practice.geeksforgeeks.org/contest/job-a-thon-15-hiring-challenge-for-freshers/leaderboard'
+        url: 'https://media.geeksforgeeks.org/auth-certificates/1672079400/c6532e518f83d5eb8cd0ec7e9e52d584.png'
     }
 ];
 

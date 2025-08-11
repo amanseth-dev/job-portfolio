@@ -51,6 +51,7 @@ export const skills: Skill[] = [
     { name: 'HTML', icon: FileCode },
     { name: 'CSS', icon: FileCode },
     { name: 'Spring Boot', icon: Server },
+    { name: 'REST API', icon: Network },
     { name: 'MySQL', icon: Database },
     { name: 'Swagger/OpenAPI', icon: Network },
     { name: 'VSCode', icon: Code },

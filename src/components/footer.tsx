@@ -11,10 +11,10 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex items-center gap-4">
-          <Link href="https://github.com/amanseth" target="_blank" rel="noopener noreferrer">
+          <Link href="https://github.com/aman1784" target="_blank" rel="noopener noreferrer">
             <Github className="h-6 w-6 text-muted-foreground transition-colors hover:text-foreground" />
           </Link>
-          <Link href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
+          <Link href="https://www.linkedin.com/in/aman-seth-926833195" target="_blank" rel="noopener noreferrer">
             <Linkedin className="h-6 w-6 text-muted-foreground transition-colors hover:text-foreground" />
           </Link>
         </div>

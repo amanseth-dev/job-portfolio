@@ -123,12 +123,12 @@ export default function Contact() {
               <h3 className="text-xl font-semibold mb-4">Other ways to connect</h3>
               <div className="flex space-x-4 mb-6">
                 <Button asChild variant="outline" size="icon">
-                  <Link href="https://github.com/amanseth" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://github.com/aman1784" target="_blank" rel="noopener noreferrer">
                     <Github className="h-5 w-5" />
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="icon">
-                  <Link href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.linkedin.com/in/aman-seth-926833195" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="h-5 w-5" />
                   </Link>
                 </Button>

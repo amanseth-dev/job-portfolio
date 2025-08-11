@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <section id="skills" className="py-24 sm:py-32">
       <div className="container">
-        <div className="max-w-2xl mx-auto lg:mx-0">
+        <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">My Tech Stack</h2>
           <p className="mt-2 text-lg leading-8 text-muted-foreground">
             Technologies and tools I'm proficient in.

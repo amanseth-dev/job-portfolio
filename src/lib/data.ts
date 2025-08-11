@@ -178,21 +178,21 @@ export const certifications = [
     {
         title: 'Problem Solving',
         issuer: 'Hackerrank',
-        url: 'https://www.hackerrank.com/certificates/693415396599'
+        url: 'https://www.hackerrank.com/certificates/0429de5a327e'
     },
     {
         title: 'Java',
         issuer: 'Hackerrank',
-        url: 'https://www.hackerrank.com/certificates/693415396599'
+        url: 'https://www.hackerrank.com/certificates/7c60ae92b827'
     },
     {
         title: 'SQL',
         issuer: 'Hackerrank',
-        url: 'https://www.hackerrank.com/certificates/68e2da580459'
+        url: 'https://www.hackerrank.com/certificates/04abf2e6910e'
     },
     {
         title: 'Python',
         issuer: 'Hackerrank',
-        url: 'https://www.hackerrank.com/certificates/97f77bdd2534'
+        url: 'https://www.hackerrank.com/certificates/ee061e64d007'
     }
 ];

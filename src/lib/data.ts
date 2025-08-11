@@ -8,6 +8,7 @@ export const projects = [
     description: 'A robust backend for an e-commerce platform with features like product management, user authentication, and order processing.',
     techStack: ['Java', 'Spring Boot', 'Hibernate', 'MySQL', 'REST API'],
     githubUrl: 'https://github.com/aman1784',
+    category: 'Professional',
     details: {
       problem: 'The client needed a scalable and secure backend to handle thousands of daily transactions and manage a large inventory of products for their new online store.',
       role: 'I was the sole backend developer responsible for designing the database schema, developing the RESTful API, and implementing security measures using Spring Security.',
@@ -20,6 +21,7 @@ export const projects = [
     description: 'A backend service for a real-time chat application using WebSockets, enabling instant messaging between users.',
     techStack: ['Java', 'Spring Boot', 'WebSockets', 'PostgreSQL'],
     githubUrl: 'https://github.com/aman1784',
+    category: 'Professional',
     details: {
       problem: 'Create a backend system that could handle persistent, low-latency connections for a real-time messaging feature in an existing social media application.',
       role: 'My role was to implement the WebSocket server, manage user sessions, and store message history in a PostgreSQL database, ensuring messages were delivered in real-time.',
@@ -32,10 +34,24 @@ export const projects = [
     description: 'Developed a RESTful API for a service booking platform, featuring appointment scheduling, provider management, and notifications.',
     techStack: ['Java', 'Spring Boot', 'REST API', 'Docker', 'MySQL'],
     githubUrl: 'https://github.com/aman1784',
+    category: 'Professional',
     details: {
       problem: 'The platform needed a reliable backend to manage complex scheduling logic, handle multiple time zones, and send automated reminders to users and service providers.',
       role: 'I designed and built the core API endpoints for booking, cancellation, and rescheduling. I also containerized the application with Docker for easy deployment and scaling.',
       outcomes: 'The new API streamlined the booking process, reducing manual intervention by 80%. Dockerization led to a more stable and predictable deployment environment.',
+    },
+  },
+    {
+    slug: 'project-four',
+    title: 'Personal Weather App',
+    description: 'A simple and clean weather application that provides real-time weather data for any city in the world.',
+    techStack: ['React', 'Node.js', 'Express', 'OpenWeatherMap API'],
+    githubUrl: 'https://github.com/aman1784',
+    category: 'Personal',
+    details: {
+      problem: 'I wanted to build a practical application to solidify my frontend skills and learn how to work with third-party APIs.',
+      role: 'I was the sole developer. I designed the UI, fetched data from the OpenWeatherMap API, and managed the application state.',
+      outcomes: 'A fully functional and responsive weather app. This project was a great learning experience in handling asynchronous API calls and managing state in a React application.',
     },
   },
 ];

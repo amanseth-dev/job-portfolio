@@ -33,7 +33,7 @@ export const projects = [
     title: 'Contacts Book',
     description: 'A simple application to store and retrieve contact information from a database.',
     techStack: ['Java', 'MySQL', 'JDBC'],
-    githubUrl: 'https://github.com/aman1784',
+    githubUrl: 'https://github.com/aman1784/ContactBook',
     category: 'Personal',
     details: {
       problem: 'Create a foundational Java application to manage a personal list of contacts.',
@@ -46,7 +46,7 @@ export const projects = [
     title: 'Todo List',
     description: 'A full-stack web application to manage a list of tasks.',
     techStack: ['Java', 'SpringBoot', 'HTML', 'CSS', 'JavaScript'],
-    githubUrl: 'https://github.com/aman1784',
+    githubUrl: '',
     category: 'Personal',
     details: {
       problem: 'Build a classic Todo list application to practice full-stack development, connecting a Java backend to a web interface.',
@@ -59,7 +59,7 @@ export const projects = [
     title: 'Billing Software',
     description: 'A simple Python-based application to accelerate billing calculations.',
     techStack: ['Python'],
-    githubUrl: 'https://github.com/aman1784',
+    githubUrl: 'https://github.com/aman1784/billing-software',
     category: 'Personal',
     details: {
       problem: 'Manual billing can be slow and prone to errors. I wanted to create a simple tool to make this process faster and more accurate.',
@@ -72,7 +72,7 @@ export const projects = [
     title: 'Job Application API',
     description: 'A backend API for a conceptual job application platform.',
     techStack: ['Java', 'SpringBoot', 'MySQL', 'Hibernate'],
-    githubUrl: 'https://github.com/aman1784',
+    githubUrl: '',
     category: 'Personal',
     details: {
       problem: 'Design the backend infrastructure for a platform where companies can post job openings and users can leave reviews for companies.',
@@ -85,7 +85,7 @@ export const projects = [
     title: 'Online Quiz',
     description: 'An interactive online quiz web application built with vanilla web technologies.',
     techStack: ['HTML', 'CSS', 'JavaScript'],
-    githubUrl: 'https://github.com/aman1784',
+    githubUrl: 'https://github.com/aman1784/quiz',
     category: 'Personal',
     details: {
       problem: 'Develop an engaging, client-side web application to test a user\'s knowledge on a topic.',

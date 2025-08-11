@@ -38,11 +38,13 @@ const ProjectCard = ({ project }: { project: Project }) => (
         <DialogTrigger asChild>
           <Button variant="outline">View Details</Button>
         </DialogTrigger>
-        <Button asChild variant="ghost" size="icon">
-          <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-            <Github className="h-5 w-5" />
-          </Link>
-        </Button>
+        {project.githubUrl && (
+          <Button asChild variant="ghost" size="icon">
+            <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+              <Github className="h-5 w-5" />
+            </Link>
+          </Button>
+        )}
       </CardFooter>
     </Card>
     <DialogContent className="sm:max-w-[625px] my-8">
@@ -71,13 +73,15 @@ const ProjectCard = ({ project }: { project: Project }) => (
             <p className="text-muted-foreground">{project.details.outcomes}</p>
           </div>
         </div>
-        <div className="mt-4 flex justify-end">
-           <Button asChild>
-              <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                View on GitHub <ExternalLink className="h-4 w-4 ml-2" />
-              </Link>
-            </Button>
-        </div>
+        {project.githubUrl && (
+          <div className="mt-4 flex justify-end">
+            <Button asChild>
+                <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                  View on GitHub <ExternalLink className="h-4 w-4 ml-2" />
+                </Link>
+              </Button>
+          </div>
+        )}
       </ScrollArea>
     </DialogContent>
   </Dialog>

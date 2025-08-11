@@ -6,6 +6,7 @@ import Experience from '@/components/sections/experience';
 import About from '@/components/sections/about';
 import Achievements from '@/components/sections/achievements';
 import Certifications from '@/components/sections/certifications';
+import Training from '@/components/sections/training';
 import Contact from '@/components/sections/contact';
 import Footer from '@/components/footer';
 import GoToTop from '@/components/go-to-top';
@@ -22,6 +23,7 @@ export default function Home() {
         <Skills />
         <Achievements />
         <Certifications />
+        <Training />
         <Contact />
       </main>
       <Footer />

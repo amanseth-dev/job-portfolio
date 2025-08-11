@@ -196,3 +196,10 @@ export const certifications = [
         url: 'https://www.hackerrank.com/certificates/ee061e64d007'
     }
 ];
+
+export const trainings = [
+    {
+        organisation: 'UNITED GLOBAL INFOSERVICE PVT. LTD.',
+        area: 'Python'
+    }
+]

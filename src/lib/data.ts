@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Code, Server, Network, Database, Container, GitMerge } from 'lucide-react';
+import { Code, Server, Network, Database, Container, GitMerge, FileCode, Workflow, Puzzle, BrainCircuit } from 'lucide-react';
 
 export const projects = [
   {
@@ -46,15 +46,22 @@ type Skill = {
 };
 
 export const skills: Skill[] = [
-  { name: 'Java', icon: Code },
-  { name: 'Spring Boot', icon: Server },
-  { name: 'REST APIs', icon: Network },
-  { name: 'Hibernate', icon: Database },
-  { name: 'MySQL', icon: Database },
-  { name: 'PostgreSQL', icon: Database },
-  { name: 'Docker', icon: Container },
-  { name: 'Git', icon: GitMerge },
-];
+    { name: 'Java', icon: Code },
+    { name: 'Python', icon: Code },
+    { name: 'HTML', icon: FileCode },
+    { name: 'CSS', icon: FileCode },
+    { name: 'Spring Boot', icon: Server },
+    { name: 'MySQL', icon: Database },
+    { name: 'Swagger/OpenAPI', icon: Network },
+    { name: 'VSCode', icon: Code },
+    { name: 'IntelliJ Idea', icon: Code },
+    { name: 'PyCharm', icon: Code },
+    { name: 'Git', icon: GitMerge },
+    { name: 'GitHub', icon: GitMerge },
+    { name: 'OOPS', icon: Puzzle },
+    { name: 'DBMS', icon: Database },
+    { name: 'DSA', icon: BrainCircuit },
+  ];
 
 export const experiences = [
     {

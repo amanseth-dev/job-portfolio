@@ -6,14 +6,16 @@ export default function About() {
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
-            <Image
-              src="https://amankrseth.netlify.app/profile_img.png"
-              alt="Aman Kr. Seth"
-              width={400}
-              height={400}
-              className="rounded-lg shadow-lg aspect-square object-cover"
-              data-ai-hint="portrait man"
-            />
+            <div className="bg-background p-4 rounded-lg shadow-xl border">
+              <Image
+                src="https://amankrseth.netlify.app/profile_img.png"
+                alt="Aman Kr. Seth"
+                width={400}
+                height={400}
+                className="rounded-lg aspect-square object-cover"
+                data-ai-hint="portrait man"
+              />
+            </div>
           </div>
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">About Me</h2>

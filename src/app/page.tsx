@@ -8,6 +8,7 @@ import Achievements from '@/components/sections/achievements';
 import Certifications from '@/components/sections/certifications';
 import Contact from '@/components/sections/contact';
 import Footer from '@/components/footer';
+import GoToTop from '@/components/go-to-top';
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <GoToTop />
     </div>
   );
 }

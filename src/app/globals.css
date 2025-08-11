@@ -72,9 +72,9 @@
   body {
     @apply bg-background text-foreground;
     background-image:
-      linear-gradient(hsl(var(--border)) 0.5px, transparent 0.5px),
-      linear-gradient(to right, hsl(var(--border)) 0.5px, hsl(var(--background)) 0.5px);
-    background-size: 1.5rem 1.5rem;
-    background-position: -0.75rem -0.75rem;
+      linear-gradient(hsl(var(--border) / 0.8) 1px, transparent 1px),
+      linear-gradient(to right, hsl(var(--border) / 0.8) 1px, hsl(var(--background)) 1px);
+    background-size: 2rem 2rem;
+    background-position: -1rem -1rem;
   }
 }

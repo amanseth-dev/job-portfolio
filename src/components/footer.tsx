@@ -10,7 +10,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Aman Kumar Seth. All Rights Reserved.
           </p>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 md:mr-8">
           <Link href="https://github.com/aman1784" target="_blank" rel="noopener noreferrer">
             <Github className="h-6 w-6 text-muted-foreground transition-colors hover:text-foreground" />
           </Link>

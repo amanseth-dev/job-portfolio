@@ -38,7 +38,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
         <DialogTrigger asChild>
           <Button variant="outline">View Details</Button>
         </DialogTrigger>
-        {project.githubUrl && (
+        {project.githubUrl && project.category !== 'Professional' && (
           <Button asChild variant="ghost" size="icon">
             <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5" />
@@ -73,7 +73,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
             <p className="text-muted-foreground">{project.details.outcomes}</p>
           </div>
         </div>
-        {project.githubUrl && (
+        {project.githubUrl && project.category !== 'Professional' && (
           <div className="mt-4 flex justify-end">
             <Button asChild>
                 <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">

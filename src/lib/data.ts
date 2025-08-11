@@ -202,4 +202,22 @@ export const trainings = [
         organisation: 'UNITED GLOBAL INFOSERVICE PVT. LTD.',
         area: 'Python'
     }
-]
+];
+
+export const education = [
+    {
+        degree: 'Bachelor of Technology (Computer Science & Engineering)',
+        duration: '2019-2023',
+        institution: 'United College of Engineering & Research, Prayagraj',
+    },
+    {
+        degree: 'Senior Secondary School (12TH)',
+        duration: '2017-2018',
+        institution: 'St. John’s School, Jaunpur (ISC Board)',
+    },
+    {
+        degree: 'High School (10TH)',
+        duration: '2015-2016',
+        institution: 'St. John’s School, Jaunpur (ICSE Board)',
+    }
+];

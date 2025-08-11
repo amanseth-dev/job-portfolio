@@ -10,6 +10,7 @@ import Training from '@/components/sections/training';
 import Contact from '@/components/sections/contact';
 import Footer from '@/components/footer';
 import GoToTop from '@/components/go-to-top';
+import Education from '@/components/sections/education';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Projects />
         <Experience />
         <About />
+        <Education />
         <Skills />
         <Achievements />
         <Certifications />

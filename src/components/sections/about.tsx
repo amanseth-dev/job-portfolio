@@ -7,7 +7,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
             <Image
-              src="https://placehold.co/400x400.png"
+              src="https://amankrseth.netlify.app/profile_img.png"
               alt="Aman Kr. Seth"
               width={400}
               height={400}

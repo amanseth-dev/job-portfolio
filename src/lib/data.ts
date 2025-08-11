@@ -151,11 +151,11 @@ export const experiences = [
 export const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'Projects', href: '#projects' },
-  { name: 'Skills', href: '#skills' },
   { name: 'Experience', href: '#experience' },
+  { name: 'About', href: '#about' },
+  { name: 'Skills', href: '#skills' },
   { name: 'Achievements', href: '#achievements' },
   { name: 'Certifications', href: '#certifications' },
-  { name: 'About', href: '#about' },
   { name: 'Contact', href: '#contact' },
 ];
 

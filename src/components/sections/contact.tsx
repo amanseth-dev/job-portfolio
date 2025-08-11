@@ -16,7 +16,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
 import { submitContactForm } from "@/app/actions"
-import { Github, Linkedin, Download } from "lucide-react"
+import { Github, Linkedin, Download, Mail, Phone, MapPin } from "lucide-react"
 import Link from "next/link"
 
 const formSchema = z.object({
@@ -137,6 +137,23 @@ export default function Contact() {
                     <Download className="mr-2 h-4 w-4" /> Download Resume
                   </a>
                 </Button>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <Mail className="h-5 w-5 mr-3 text-muted-foreground" />
+                  <a href="mailto:amanseth0412@gmail.com" className="text-muted-foreground hover:text-foreground">amanseth0412@gmail.com</a>
+                </div>
+                <div className="flex items-center">
+                  <Phone className="h-5 w-5 mr-3 text-muted-foreground" />
+                  <span className="text-muted-foreground">+91-6386100205</span>
+                </div>
+                <div className="flex items-center">
+                  <MapPin className="h-5 w-5 mr-3 text-muted-foreground" />
+                  <span className="text-muted-foreground">Bengaluru, Karnataka, India</span>
+                </div>
               </div>
             </div>
           </div>

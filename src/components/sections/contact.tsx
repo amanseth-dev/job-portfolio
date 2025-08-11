@@ -139,18 +139,6 @@ export default function Contact() {
                 </Button>
               </div>
             </div>
-            <div>
-               <h3 className="text-xl font-semibold mb-4">Book a call</h3>
-               <div className="h-[600px] w-full bg-muted rounded-lg overflow-hidden">
-                 <iframe
-                   src="https://calendly.com/amanseth-dev/30min"
-                   width="100%"
-                   height="100%"
-                   frameBorder="0"
-                   className="min-h-[600px]"
-                 ></iframe>
-               </div>
-            </div>
           </div>
         </div>
       </div>

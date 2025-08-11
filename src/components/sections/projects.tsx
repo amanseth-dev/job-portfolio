@@ -15,6 +15,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, Di
 import { projects } from '@/lib/data';
 import Link from 'next/link';
 import { Github, ExternalLink } from 'lucide-react';
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 type Project = (typeof projects)[0];
 
@@ -57,37 +58,39 @@ export default function Projects() {
                 </CardFooter>
               </Card>
               <DialogContent className="sm:max-w-[625px] my-8">
-                <DialogHeader className="text-left">
-                  <DialogTitle className="text-2xl">{project.title}</DialogTitle>
-                  <DialogDescription>
-                    <div className="flex flex-wrap gap-2 my-4">
-                      {project.techStack.map((tech) => (
-                        <Badge key={tech} variant="secondary">{tech}</Badge>
-                      ))}
+                <ScrollArea className="max-h-[80vh] p-6">
+                  <DialogHeader className="text-left">
+                    <DialogTitle className="text-2xl">{project.title}</DialogTitle>
+                    <DialogDescription>
+                      <div className="flex flex-wrap gap-2 my-4">
+                        {project.techStack.map((tech) => (
+                          <Badge key={tech} variant="secondary">{tech}</Badge>
+                        ))}
+                      </div>
+                    </DialogDescription>
+                  </DialogHeader>
+                  <div className="grid gap-4 py-4 text-left">
+                    <div>
+                      <h3 className="font-semibold mb-2">Problem</h3>
+                      <p className="text-muted-foreground">{project.details.problem}</p>
                     </div>
-                  </DialogDescription>
-                </DialogHeader>
-                <div className="grid gap-4 py-4 text-left">
-                  <div>
-                    <h3 className="font-semibold mb-2">Problem</h3>
-                    <p className="text-muted-foreground">{project.details.problem}</p>
+                    <div>
+                      <h3 className="font-semibold mb-2">My Role & Contribution</h3>
+                      <p className="text-muted-foreground">{project.details.role}</p>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold mb-2">Outcomes & Results</h3>
+                      <p className="text-muted-foreground">{project.details.outcomes}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-semibold mb-2">My Role & Contribution</h3>
-                    <p className="text-muted-foreground">{project.details.role}</p>
+                  <div className="mt-4 flex justify-end">
+                     <Button asChild>
+                        <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                          View on GitHub <ExternalLink className="h-4 w-4 ml-2" />
+                        </Link>
+                      </Button>
                   </div>
-                  <div>
-                    <h3 className="font-semibold mb-2">Outcomes & Results</h3>
-                    <p className="text-muted-foreground">{project.details.outcomes}</p>
-                  </div>
-                </div>
-                <div className="mt-4 flex justify-end">
-                   <Button asChild>
-                      <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        View on GitHub <ExternalLink className="h-4 w-4 ml-2" />
-                      </Link>
-                    </Button>
-                </div>
+                </ScrollArea>
               </DialogContent>
             </Dialog>
           ))}

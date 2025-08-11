@@ -7,7 +7,7 @@ export const projects = [
     title: 'E-commerce REST API',
     description: 'A robust backend for an e-commerce platform with features like product management, user authentication, and order processing.',
     techStack: ['Java', 'Spring Boot', 'Hibernate', 'MySQL', 'REST API'],
-    githubUrl: 'https://github.com/aman1784',
+    githubUrl: 'https://github.com/aman1784/E-Commerce-REST-API',
     category: 'Professional',
     details: {
       problem: 'The client needed a scalable and secure backend to handle thousands of daily transactions and manage a large inventory of products for their new online store.',
@@ -20,7 +20,7 @@ export const projects = [
     title: 'Real-time Chat Application',
     description: 'A backend service for a real-time chat application using WebSockets, enabling instant messaging between users.',
     techStack: ['Java', 'Spring Boot', 'WebSockets', 'PostgreSQL'],
-    githubUrl: 'https://github.com/aman1784',
+    githubUrl: 'https://github.com/aman1784/Real-Time-Chat-Application-Backend',
     category: 'Professional',
     details: {
       problem: 'Create a backend system that could handle persistent, low-latency connections for a real-time messaging feature in an existing social media application.',
@@ -33,7 +33,7 @@ export const projects = [
     title: 'API for a Booking System',
     description: 'Developed a RESTful API for a service booking platform, featuring appointment scheduling, provider management, and notifications.',
     techStack: ['Java', 'Spring Boot', 'REST API', 'Docker', 'MySQL'],
-    githubUrl: 'https://github.com/aman1784',
+    githubUrl: 'https://github.com/aman1784/API-for-a-Booking-System',
     category: 'Professional',
     details: {
       problem: 'The platform needed a reliable backend to manage complex scheduling logic, handle multiple time zones, and send automated reminders to users and service providers.',

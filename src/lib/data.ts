@@ -58,23 +58,29 @@ export const skills: Skill[] = [
 
 export const experiences = [
     {
-        company: "Newton School",
-        role: "Full Stack Development",
-        duration: "Jan 2022 - Present",
+        company: "Autoverse Mobility Pvt. Ltd., Bengaluru",
+        role: "Software Engineer",
+        duration: "March 2025 - Present",
         description: [
-            "Completed a comprehensive Full Stack Development course covering both front-end and back-end technologies.",
-            "Gained hands-on experience with Java, Spring Boot, Hibernate, and data structures.",
-            "Developed and deployed several full-stack projects, demonstrating proficiency in building scalable and robust web applications."
+            "Garage Management System api's using Java and SpringBoot framework.",
+            "It integrates RazorPay payment gateway."
         ]
     },
     {
-        company: "NTPC",
-        role: "Engineering Intern",
-        duration: "Jun 2019 - Jul 2019",
+        company: "Autoverse Mobility Pvt. Ltd., Bengaluru",
+        role: "Software Engineer Intern",
+        duration: "Dec 2024 - Feb 2025",
         description: [
-            "Assisted in the maintenance and monitoring of thermal power plant equipment.",
-            "Gained practical knowledge of industrial engineering processes and safety protocols.",
-            "Collaborated with a team of engineers to troubleshoot and resolve technical issues."
+            "Developed an api that connects to ONDC platform to provide automobiles spares parts results"
+        ]
+    },
+    {
+        company: "Nucleus Software Exports Ltd., Noida",
+        role: "Assistant Software Engineer",
+        duration: "July 2023 - Jan 2024",
+        description: [
+            "Developed proficiency in backend development using Java",
+            "Developed a module that connects the customer with the banking portal"
         ]
     }
 ];

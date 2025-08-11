@@ -162,7 +162,7 @@ export const navLinks = [
 export const achievements = [
     {
         description: 'Five stars in Java at Hackerrank',
-        url: 'https://www.hackerrank.com/profile/amanseth0412'
+        url: 'https://www.hackerrank.com/profile/CS1900100100017'
     },
     {
         description: 'Four stars in Python at Hackerrank',

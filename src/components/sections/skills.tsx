@@ -16,13 +16,13 @@ export default function Skills() {
             const Icon = skill.icon;
             return (
               <Card key={skill.name} className="text-center hover:shadow-md transition-shadow">
-                <CardHeader className="items-center">
-                  <div className="p-4 bg-muted rounded-full">
-                    <Icon className="h-8 w-8 text-primary" />
+                <CardHeader className="items-center p-4">
+                  <div className="p-3 bg-muted rounded-full">
+                    <Icon className="h-6 w-6 text-primary" />
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <CardTitle className="text-base font-medium">{skill.name}</CardTitle>
+                <CardContent className="p-4 pt-0">
+                  <CardTitle className="text-sm font-medium">{skill.name}</CardTitle>
                 </CardContent>
               </Card>
             );

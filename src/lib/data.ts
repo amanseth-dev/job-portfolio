@@ -61,7 +61,7 @@ export const skills: Skill[] = [
     { name: 'GitHub', icon: GitMerge },
     { name: 'OOPS', icon: Puzzle },
     { name: 'DBMS', icon: Database },
-    { name: 'DSA', icon: BrainCircuit },
+    { name: 'Data Structures and Algorithms', icon: BrainCircuit },
   ];
 
 export const experiences = [

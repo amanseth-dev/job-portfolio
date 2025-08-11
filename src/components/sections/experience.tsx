@@ -13,17 +13,17 @@ export default function Experience() {
           </p>
         </div>
         <div className="mt-16 relative">
-          <div className="absolute left-1/2 -ml-[1px] h-full w-0.5 bg-border"></div>
+          <div className="absolute left-0 md:left-1/2 -ml-[1px] h-full w-0.5 bg-border"></div>
           {experiences.map((experience, index) => (
             <div key={index} className="mb-12 relative">
-              <div className="absolute left-1/2 -translate-x-1/2 mt-1.5">
+              <div className="absolute left-0 md:left-1/2 -translate-x-1/2 mt-1.5">
                   <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary ring-8 ring-background">
                     <Briefcase className="h-4 w-4 text-primary-foreground" />
                   </span>
               </div>
-              <div className={`w-full flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-                <div className="w-1/2 px-4">
-                  <Card className={`text-left ${index % 2 === 0 ? 'mr-4' : 'ml-4'}`}>
+              <div className={`w-full flex md:justify-start ${index % 2 === 0 ? 'md:justify-start' : 'md:justify-end'}`}>
+                <div className="w-full md:w-1/2 px-4 pl-10 md:px-4">
+                  <Card className={`text-left`}>
                     <CardHeader>
                       <CardTitle>{experience.role}</CardTitle>
                       <CardDescription>

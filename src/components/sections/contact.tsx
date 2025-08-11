@@ -133,7 +133,7 @@ export default function Contact() {
                   </Link>
                 </Button>
                  <Button asChild variant="outline">
-                  <a href="/resume.pdf" download>
+                  <a href="https://drive.google.com/file/d/1i1Cw4TK1NlQmtSa6DviEg6YJ89SJTtOW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <Download className="mr-2 h-4 w-4" /> Download Resume
                   </a>
                 </Button>

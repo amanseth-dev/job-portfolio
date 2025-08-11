@@ -6,13 +6,14 @@ export default function About() {
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
-            <div className="bg-background p-4 rounded-lg shadow-xl border">
+            <div className="bg-background p-4 rounded-lg shadow-xl border relative group overflow-hidden">
+               <div className="absolute inset-0 bg-accent/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <Image
                 src="https://amankrseth.netlify.app/profile_img.png"
                 alt="Aman Kumar Seth"
                 width={400}
                 height={400}
-                className="rounded-lg aspect-square object-cover"
+                className="rounded-lg aspect-square object-cover relative z-10 transition-transform duration-300 group-hover:scale-105"
                 data-ai-hint="portrait man"
               />
             </div>

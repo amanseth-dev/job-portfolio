@@ -26,9 +26,6 @@ export default function About() {
             <p className="mt-4 text-lg text-muted-foreground">
               My development philosophy is centered around writing clean, maintainable code and following an API-first approach. I believe in building systems that are not only powerful but also easy to understand and extend.
             </p>
-            <p className="mt-4 text-lg text-muted-foreground">
-              As I transition into freelancing, I am excited to collaborate with clients to bring their ideas to life, contributing my backend expertise to create impactful digital products.
-            </p>
           </div>
         </div>
       </div>

@@ -56,10 +56,34 @@ export const skills: Skill[] = [
   { name: 'Git', icon: GitMerge },
 ];
 
+export const experiences = [
+    {
+        company: "Newton School",
+        role: "Full Stack Development",
+        duration: "Jan 2022 - Present",
+        description: [
+            "Completed a comprehensive Full Stack Development course covering both front-end and back-end technologies.",
+            "Gained hands-on experience with Java, Spring Boot, Hibernate, and data structures.",
+            "Developed and deployed several full-stack projects, demonstrating proficiency in building scalable and robust web applications."
+        ]
+    },
+    {
+        company: "NTPC",
+        role: "Engineering Intern",
+        duration: "Jun 2019 - Jul 2019",
+        description: [
+            "Assisted in the maintenance and monitoring of thermal power plant equipment.",
+            "Gained practical knowledge of industrial engineering processes and safety protocols.",
+            "Collaborated with a team of engineers to troubleshoot and resolve technical issues."
+        ]
+    }
+];
+
 export const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'Projects', href: '#projects' },
   { name: 'Skills', href: '#skills' },
+  { name: 'Experience', href: '#experience' },
   { name: 'About', href: '#about' },
   { name: 'Contact', href: '#contact' },
 ];

@@ -9,7 +9,7 @@ export default function About() {
             <div className="bg-background p-4 rounded-lg shadow-xl border">
               <Image
                 src="https://amankrseth.netlify.app/profile_img.png"
-                alt="Aman Kr. Seth"
+                alt="Aman Kumar Seth"
                 width={400}
                 height={400}
                 className="rounded-lg aspect-square object-cover"

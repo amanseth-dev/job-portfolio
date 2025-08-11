@@ -18,7 +18,7 @@ export default function Header() {
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Code className="h-6 w-6 text-primary" />
             <span className="font-bold sm:inline-block">
-              Aman Kr. Seth
+              Aman Kumar Seth
             </span>
           </Link>
         </div>
@@ -48,7 +48,7 @@ export default function Header() {
               <div className="flex flex-col p-6">
                 <Link href="/" className="mb-8 flex items-center space-x-2" onClick={() => setIsOpen(false)}>
                   <Code className="h-6 w-6 text-primary" />
-                  <span className="font-bold">Aman Kr. Seth</span>
+                  <span className="font-bold">Aman Kumar Seth</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (

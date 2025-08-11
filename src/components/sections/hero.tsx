@@ -7,7 +7,7 @@ export default function Hero() {
     <section id="home" className="container py-24 sm:py-32">
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl font-headline">
-          Aman Kr. Seth
+          Aman Kumar Seth
         </h1>
         <p className="mt-4 text-lg text-primary">
           Java Spring Boot Backend Developer

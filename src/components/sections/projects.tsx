@@ -56,7 +56,7 @@ export default function Projects() {
                   </Button>
                 </CardFooter>
               </Card>
-              <DialogContent className="sm:max-w-[625px]">
+              <DialogContent className="sm:max-w-[625px] py-10">
                 <DialogHeader className="text-left">
                   <DialogTitle className="text-2xl">{project.title}</DialogTitle>
                   <DialogDescription>

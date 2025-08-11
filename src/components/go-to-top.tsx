@@ -7,15 +7,34 @@ import { cn } from '@/lib/utils';
 
 export default function GoToTop() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isFooterVisible, setIsFooterVisible] = useState(false);
 
-  const toggleVisibility = () => {
-    // Show button when scrolled down more than 10% of the viewport height
-    if (window.scrollY > window.innerHeight * 0.1) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > window.innerHeight * 0.1) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+
+      const footer = document.querySelector('footer');
+      if (footer) {
+        const footerRect = footer.getBoundingClientRect();
+        if (footerRect.top < window.innerHeight) {
+          setIsFooterVisible(true);
+        } else {
+          setIsFooterVisible(false);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', toggleVisibility);
+    toggleVisibility(); // Initial check
+
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
+    };
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -24,16 +43,13 @@ export default function GoToTop() {
     });
   };
 
-  useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility);
-
-    return () => {
-      window.removeEventListener('scroll', toggleVisibility);
-    };
-  }, []);
-
   return (
-    <div className="fixed bottom-8 right-8 z-50">
+    <div
+      className={cn(
+        "fixed right-8 z-50 transition-all duration-300",
+        isFooterVisible ? "bottom-32" : "bottom-8"
+      )}
+    >
       <Button
         size="icon"
         onClick={scrollToTop}

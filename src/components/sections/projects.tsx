@@ -24,7 +24,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-24 sm:py-32 bg-muted/50 dark:bg-card">
       <div className="container">
-        <div className="max-w-2xl mx-auto lg:mx-0">
+        <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">My Work</h2>
           <p className="mt-2 text-lg leading-8 text-muted-foreground">
             A selection of projects that demonstrate my skills in backend development.
@@ -33,7 +33,7 @@ export default function Projects() {
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <Dialog key={project.slug}>
-              <Card className="flex flex-col h-full transition-transform transform hover:-translate-y-1 hover:shadow-xl">
+              <Card className="flex flex-col h-full transition-transform transform hover:-translate-y-1 hover:shadow-xl text-left">
                 <CardHeader>
                   <CardTitle>{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>
@@ -57,7 +57,7 @@ export default function Projects() {
                 </CardFooter>
               </Card>
               <DialogContent className="sm:max-w-[625px]">
-                <DialogHeader>
+                <DialogHeader className="text-left">
                   <DialogTitle className="text-2xl">{project.title}</DialogTitle>
                   <DialogDescription>
                     <div className="flex flex-wrap gap-2 my-4">
@@ -67,7 +67,7 @@ export default function Projects() {
                     </div>
                   </DialogDescription>
                 </DialogHeader>
-                <div className="grid gap-4 py-4">
+                <div className="grid gap-4 py-4 text-left">
                   <div>
                     <h3 className="font-semibold mb-2">Problem</h3>
                     <p className="text-muted-foreground">{project.details.problem}</p>

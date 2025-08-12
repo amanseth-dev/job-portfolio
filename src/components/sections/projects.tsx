@@ -107,14 +107,14 @@ export default function Projects() {
             <TabsTrigger value="personal">Personal</TabsTrigger>
           </TabsList>
           <TabsContent value="professional">
-            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 justify-center">
               {professionalProjects.map((project) => (
                 <ProjectCard key={project.slug} project={project} />
               ))}
             </div>
           </TabsContent>
           <TabsContent value="personal">
-            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 justify-center">
               {personalProjects.map((project) => (
                 <ProjectCard key={project.slug} project={project} />
               ))}

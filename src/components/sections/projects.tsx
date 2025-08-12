@@ -22,7 +22,7 @@ type Project = (typeof projects)[0];
 
 const ProjectCard = ({ project }: { project: Project }) => (
   <Dialog>
-    <Card className="flex flex-col text-left transition-transform transform hover:-translate-y-1 hover:shadow-xl">
+    <Card className="flex flex-col text-left transition-transform transform hover:-translate-y-1 hover:shadow-xl h-full">
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
         <CardDescription>{project.description}</CardDescription>

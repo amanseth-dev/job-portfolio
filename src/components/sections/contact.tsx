@@ -14,11 +14,11 @@ export default function Contact() {
             Have a project in mind or just want to say hi? Feel free to reach out.
           </p>
         </div>
-        <div className="mt-16 flex justify-center">
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-center">Other ways to connect</h3>
-              <div className="flex justify-center space-x-4 mb-6">
+        <div className="mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="text-center md:text-left">
+              <h3 className="text-xl font-semibold mb-4">Other ways to connect</h3>
+              <div className="flex justify-center md:justify-start space-x-4 mb-6">
                 <Button asChild variant="outline" size="icon">
                   <Link href="https://github.com/aman1784" target="_blank" rel="noopener noreferrer">
                     <Github className="h-5 w-5" />
@@ -36,18 +36,18 @@ export default function Contact() {
                 </Button>
               </div>
             </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4 text-center">Contact Information</h3>
+            <div className="text-center md:text-left">
+              <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
               <div className="space-y-4">
-                <div className="flex items-center">
+                <div className="flex items-center justify-center md:justify-start">
                   <Mail className="h-5 w-5 mr-3 text-muted-foreground" />
                   <a href="mailto:amanseth0412@gmail.com" className="text-muted-foreground hover:text-foreground">amanseth0412@gmail.com</a>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center md:justify-start">
                   <Phone className="h-5 w-5 mr-3 text-muted-foreground" />
                   <span className="text-muted-foreground">+91-6386100205</span>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center md:justify-start">
                   <MapPin className="h-5 w-5 mr-3 text-muted-foreground" />
                   <span className="text-muted-foreground">Bengaluru, Karnataka, India</span>
                 </div>

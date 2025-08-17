@@ -19,7 +19,7 @@ export const projects = [
     slug: 'ondc-api',
     title: 'ONDC API',
     description: 'An API that connects to the ONDC platform to provide search results for automobile spare parts.',
-    techStack: ['Java', 'SpringBoot', 'Hibernate'],
+    techStack: ['Java', 'SpringBoot', 'Hibernate', 'MySQL'],
     githubUrl: 'https://github.com/aman1784',
     category: 'Professional',
     details: {
@@ -54,19 +54,19 @@ export const projects = [
       outcomes: 'A functional web application where users can create, view, update, and delete their tasks, showcasing the ability to build and connect a backend API with a frontend interface.',
     },
   },
-  {
-    slug: 'billing-software',
-    title: 'Billing Software',
-    description: 'A simple Python-based application to accelerate billing calculations.',
-    techStack: ['Python'],
-    githubUrl: 'https://github.com/aman1784/billing-software',
-    category: 'Personal',
-    details: {
-      problem: 'Manual billing can be slow and prone to errors. I wanted to create a simple tool to make this process faster and more accurate.',
-      role: 'I wrote a Python script that takes item details as input and quickly calculates the total bill, including any applicable taxes. It was a focused exercise in Python scripting.',
-      outcomes: 'A lightweight and fast script that serves as a proof-of-concept for a simple billing tool, speeding up the calculation process for customers.',
-    },
-  },
+  // {
+  //   slug: 'billing-software',
+  //   title: 'Billing Software',
+  //   description: 'A simple Python-based application to accelerate billing calculations.',
+  //   techStack: ['Python'],
+  //   githubUrl: 'https://github.com/aman1784/billing-software',
+  //   category: 'Personal',
+  //   details: {
+  //     problem: 'Manual billing can be slow and prone to errors. I wanted to create a simple tool to make this process faster and more accurate.',
+  //     role: 'I wrote a Python script that takes item details as input and quickly calculates the total bill, including any applicable taxes. It was a focused exercise in Python scripting.',
+  //     outcomes: 'A lightweight and fast script that serves as a proof-of-concept for a simple billing tool, speeding up the calculation process for customers.',
+  //   },
+  // },
   {
     slug: 'job-application-api',
     title: 'Job Application API',

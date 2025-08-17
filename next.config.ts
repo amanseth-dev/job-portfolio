@@ -21,6 +21,12 @@ const nextConfig: NextConfig = {
         hostname: 'amankrseth.netlify.app',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.dropbox.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

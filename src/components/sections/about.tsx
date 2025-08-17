@@ -9,7 +9,7 @@ export default function About() {
             <div className="bg-background p-4 rounded-lg shadow-xl border relative group overflow-hidden">
                <div className="absolute inset-0 bg-accent/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <Image
-                src="https://amankrseth.netlify.app/profile_img.png"
+                src="https://www.dropbox.com/scl/fi/xvxas23kts1igots1e60z/portfolio_image.jpg?rlkey=o9delacy0k9v01mns1z05ip6k&raw=1"
                 alt="Aman Kumar Seth"
                 width={400}
                 height={400}

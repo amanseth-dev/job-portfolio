@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   icons: {
     icon: 'https://www.dropbox.com/scl/fi/xvxas23kts1igots1e60z/portfolio_image.jpg?rlkey=o9delacy0k9v01mns1z05ip6k&raw=1',
   },
-  keywords: 'aman kumar seth, amankrseth, portfolio, Aman Kumar Seth, Java Developer, Software Engineer, Hibernate, Swagger, amankrseth.netlify.app, Aman Seth, aman kr seth linkedin, https://www.linkedin.com/in/aman-seth-926833195'
+  keywords: 'aman kumar seth, amankrseth, portfolio, Aman Kumar Seth, Java Developer, Software Engineer, Springboot, Backend Developer, backend, Hibernate, amankrseth.netlify.app, Aman Seth, aman kr seth linkedin'
 };
 
 export default function RootLayout({

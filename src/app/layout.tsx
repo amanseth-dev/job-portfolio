@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: 'Aman Kr. Seth | Backend Developer',
-  description: "Portfolio of Aman Kr. Seth, a freelance backend developer specializing in Java and Spring Boot.",
+  title: 'Aman Kumar Seth | Backend Developer',
+  description: "Portfolio of Aman Kumar Seth, backend developer specializing in Java and Spring Boot.",
   icons: {
     icon: 'https://www.dropbox.com/scl/fi/xvxas23kts1igots1e60z/portfolio_image.jpg?rlkey=o9delacy0k9v01mns1z05ip6k&raw=1',
   },

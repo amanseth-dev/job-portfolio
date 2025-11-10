@@ -45,8 +45,8 @@ export const projects = [
     slug: 'todo-list',
     title: 'Todo List',
     description: 'A full-stack web application to manage a list of tasks.',
-    techStack: ['Java', 'SpringBoot', 'HTML', 'CSS', 'JavaScript'],
-    githubUrl: '',
+    techStack: ['Java', 'SpringBoot', 'Spring Data Jpa', 'Hibernate', 'H2-Database', 'HTML', 'CSS', 'JavaScript'],
+    githubUrl: 'https://github.com/aman1784/todo-list',
     category: 'Personal',
     details: {
       problem: 'Build a classic Todo list application to practice full-stack development, connecting a Java backend to a web interface.',

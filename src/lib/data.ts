@@ -103,20 +103,21 @@ type Skill = {
 export const skills: Skill[] = [
     { name: 'Java', icon: Code },
     { name: 'Python', icon: Code },
+    { name: 'Spring Boot', icon: Server },
+    { name: 'MySQL', icon: Database },
     { name: 'HTML', icon: FileCode },
     { name: 'CSS', icon: FileCode },
-    { name: 'Spring Boot', icon: Server },
+    { name: 'IntelliJ Idea', icon: Code },
     { name: 'REST API', icon: Network },
-    { name: 'MySQL', icon: Database },
+    { name: 'Git', icon: GitMerge },
     { name: 'Swagger/OpenAPI', icon: Network },
     { name: 'VSCode', icon: Code },
-    { name: 'IntelliJ Idea', icon: Code },
-    { name: 'PyCharm', icon: Code },
-    { name: 'Git', icon: GitMerge },
     { name: 'GitHub', icon: GitMerge },
+    { name: 'PyCharm', icon: Code },
     { name: 'OOPS', icon: Puzzle },
     { name: 'DBMS', icon: Database },
     { name: 'Data Structures and Algorithms', icon: BrainCircuit },
+    {name: 'Redis Cache', icon: Database}
   ];
 
 export const experiences = [

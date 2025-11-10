@@ -6,7 +6,7 @@ export const projects = [
     slug: 'garage-management-system',
     title: 'Garage Management System',
     description: 'A system for garages to maintain a digital workbook, manage customer data, and handle billing with payment gateway integration.',
-    techStack: ['Java', 'SpringBoot', 'Hibernate', 'MySQL', 'RazorPay'],
+    techStack: ['Java', 'SpringBoot', 'Spring Data JPA', 'Hibernate', 'MySQL', 'RazorPay API'],
     githubUrl: 'https://github.com/aman1784',
     category: 'Professional',
     details: {
@@ -19,7 +19,7 @@ export const projects = [
     slug: 'ondc-api',
     title: 'ONDC API',
     description: 'An API that connects to the ONDC platform to provide search results for automobile spare parts.',
-    techStack: ['Java', 'SpringBoot', 'Hibernate', 'MySQL'],
+    techStack: ['Java', 'SpringBoot', 'Spring Data JPA', 'Hibernate', 'MySQL'],
     githubUrl: 'https://github.com/aman1784',
     category: 'Professional',
     details: {

@@ -125,8 +125,10 @@ export const experiences = [
         role: "Software Engineer",
         duration: "March 2025 - Present",
         description: [
-            "Garage Management System api's using Java and SpringBoot framework.",
-            "It integrates RazorPay payment gateway."
+            "Designed, developed, and maintained scalable RESTful APIs for a Garage Management System using Java 17 and the Spring Boot framework.",
+            "Integrated the RazorPay payment gateway using their REST APIs, enabling secure and reliable online transactions for all garage services.",
+            "Collaborated with the frontend team to define API contracts and ensure seamless data flow.",
+            "Utilized Spring Data JPA with MySQL for database operations",
         ]
     },
     {

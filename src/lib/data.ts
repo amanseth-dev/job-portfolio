@@ -97,7 +97,7 @@ export const projects = [
     techStack: ['HTML', 'CSS', 'JavaScript'],
     githubUrl: 'https://github.com/aman1784/quiz',
     liveUrl: 'https://aman1784.github.io/quiz/',
-    videoUrl: '',
+    videoUrl: "https://www.dropbox.com/scl/fi/tt0f9q55p6suvo835cbr1/online_quiz.mkv?rlkey=0qnl8u50pvx22jcw4k93k5442&raw=1",
     category: 'Personal',
     details: {
       problem: 'Develop an engaging, client-side web application to test a user\'s knowledge on a topic.',

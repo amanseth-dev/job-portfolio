@@ -54,7 +54,7 @@ export const projects = [
     techStack: ['Java', 'SpringBoot', 'Spring Data Jpa', 'Hibernate', 'H2-Database', 'HTML', 'CSS', 'JavaScript'],
     githubUrl: 'https://github.com/aman1784/todo-list',
     liveUrl: 'https://todo-list-backend-frontend.onrender.com',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Example video
+    videoUrl: '',
     category: 'Personal',
     details: {
       problem: 'Build a classic Todo list application to practice full-stack development, connecting a Java backend to a web interface.',

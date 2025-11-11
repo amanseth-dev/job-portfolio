@@ -91,7 +91,7 @@ export const projects = [
     description: 'An interactive online quiz web application built with vanilla web technologies.',
     techStack: ['HTML', 'CSS', 'JavaScript'],
     githubUrl: 'https://github.com/aman1784/quiz',
-    liveUrl: '',
+    liveUrl: 'https://aman1784.github.io/quiz/',
     category: 'Personal',
     details: {
       problem: 'Develop an engaging, client-side web application to test a user\'s knowledge on a topic.',

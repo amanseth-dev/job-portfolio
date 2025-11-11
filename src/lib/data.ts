@@ -9,6 +9,7 @@ export const projects = [
     techStack: ['Java', 'SpringBoot', 'Spring Data JPA', 'Hibernate', 'MySQL', 'RazorPay API'],
     githubUrl: 'https://github.com/aman1784',
     liveUrl: '',
+    videoUrl: '',
     category: 'Professional',
     details: {
       problem: 'Garages traditionally use physical workbooks, which are inefficient for managing customer records, vehicle history, and billing. They needed a digital solution to streamline these operations.',
@@ -23,6 +24,7 @@ export const projects = [
     techStack: ['Java', 'SpringBoot', 'Spring Data JPA', 'Hibernate', 'MySQL'],
     githubUrl: 'https://github.com/aman1784',
     liveUrl: '',
+    videoUrl: '',
     category: 'Professional',
     details: {
       problem: 'There was a need to create a unified search experience for automobile spare parts by leveraging the Open Network for Digital Commerce (ONDC) platform, which connects multiple sellers.',
@@ -37,6 +39,7 @@ export const projects = [
     techStack: ['Java', 'MySQL', 'JDBC'],
     githubUrl: 'https://github.com/aman1784/ContactBook',
     liveUrl: '',
+    videoUrl: '',
     category: 'Personal',
     details: {
       problem: 'Create a foundational Java application to manage a personal list of contacts.',
@@ -51,6 +54,7 @@ export const projects = [
     techStack: ['Java', 'SpringBoot', 'Spring Data Jpa', 'Hibernate', 'H2-Database', 'HTML', 'CSS', 'JavaScript'],
     githubUrl: 'https://github.com/aman1784/todo-list',
     liveUrl: 'https://todo-list-backend-frontend.onrender.com',
+    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Example video
     category: 'Personal',
     details: {
       problem: 'Build a classic Todo list application to practice full-stack development, connecting a Java backend to a web interface.',
@@ -78,6 +82,7 @@ export const projects = [
     techStack: ['Java', 'SpringBoot', 'MySQL', 'Hibernate'],
     githubUrl: '',
     liveUrl: '',
+    videoUrl: '',
     category: 'Personal',
     details: {
       problem: 'Design the backend infrastructure for a platform where companies can post job openings and users can leave reviews for companies.',
@@ -92,6 +97,7 @@ export const projects = [
     techStack: ['HTML', 'CSS', 'JavaScript'],
     githubUrl: 'https://github.com/aman1784/quiz',
     liveUrl: 'https://aman1784.github.io/quiz/',
+    videoUrl: '',
     category: 'Personal',
     details: {
       problem: 'Develop an engaging, client-side web application to test a user\'s knowledge on a topic.',

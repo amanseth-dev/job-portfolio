@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from '@/components/ui/dialog';
 import { projects } from '@/lib/data';
 import Link from 'next/link';
-import { Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink, Video } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
@@ -68,6 +68,21 @@ const ProjectCard = ({ project }: { project: Project }) => (
             </div>
           </DialogDescription>
         </DialogHeader>
+        {project.videoUrl && (
+          <div className="my-4">
+            <h3 className="font-semibold mb-2">Project Demo</h3>
+            <div className="aspect-video">
+              <iframe
+                className="w-full h-full rounded-lg"
+                src={project.videoUrl}
+                title={`Project Demo for ${project.title}`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        )}
         <div className="grid gap-4 py-4 text-left">
           <div>
             <h3 className="font-semibold mb-2">Problem</h3>

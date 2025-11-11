@@ -36,7 +36,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
       </CardContent>
       <CardFooter className="flex justify-between">
         <DialogTrigger asChild>
-          <Button variant="outline">View Details</Button>
+          <Button variant="outline">View Details / Demo</Button>
         </DialogTrigger>
         <div className="flex items-center gap-2">
           {project.liveUrl && (

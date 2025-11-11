@@ -54,7 +54,7 @@ export const projects = [
     techStack: ['Java', 'SpringBoot', 'Spring Data Jpa', 'Hibernate', 'H2-Database', 'HTML', 'CSS', 'JavaScript'],
     githubUrl: 'https://github.com/aman1784/todo-list',
     liveUrl: 'https://todo-list-backend-frontend.onrender.com',
-    videoUrl: '',
+    videoUrl: 'https://www.dropbox.com/scl/fi/4qd2kebk8f1ogttc3805h/todo_list.mp4?rlkey=gh93d575wosf0crcapf836mwr&st=ekmvlv7q&raw=1',
     category: 'Personal',
     details: {
       problem: 'Build a classic Todo list application to practice full-stack development, connecting a Java backend to a web interface.',
@@ -97,7 +97,7 @@ export const projects = [
     techStack: ['HTML', 'CSS', 'JavaScript'],
     githubUrl: 'https://github.com/aman1784/quiz',
     liveUrl: 'https://aman1784.github.io/quiz/',
-    videoUrl: "https://www.dropbox.com/scl/fi/tt0f9q55p6suvo835cbr1/online_quiz.mkv?rlkey=0qnl8u50pvx22jcw4k93k5442&raw=1",
+    videoUrl: 'https://www.dropbox.com/scl/fi/uu7v4cjduap7wexka183b/online_quiz.mp4?rlkey=ihqfuoqyetb0wn155bs67lg3p&st=8rr5q6bu&raw=1',
     category: 'Personal',
     details: {
       problem: 'Develop an engaging, client-side web application to test a user\'s knowledge on a topic.',

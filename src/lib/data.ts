@@ -8,6 +8,7 @@ export const projects = [
     description: 'A system for garages to maintain a digital workbook, manage customer data, and handle billing with payment gateway integration.',
     techStack: ['Java', 'SpringBoot', 'Spring Data JPA', 'Hibernate', 'MySQL', 'RazorPay API'],
     githubUrl: 'https://github.com/aman1784',
+    liveUrl: '',
     category: 'Professional',
     details: {
       problem: 'Garages traditionally use physical workbooks, which are inefficient for managing customer records, vehicle history, and billing. They needed a digital solution to streamline these operations.',
@@ -21,6 +22,7 @@ export const projects = [
     description: 'An API that connects to the ONDC platform to provide search results for automobile spare parts.',
     techStack: ['Java', 'SpringBoot', 'Spring Data JPA', 'Hibernate', 'MySQL'],
     githubUrl: 'https://github.com/aman1784',
+    liveUrl: '',
     category: 'Professional',
     details: {
       problem: 'There was a need to create a unified search experience for automobile spare parts by leveraging the Open Network for Digital Commerce (ONDC) platform, which connects multiple sellers.',
@@ -34,6 +36,7 @@ export const projects = [
     description: 'A simple application to store and retrieve contact information from a database.',
     techStack: ['Java', 'MySQL', 'JDBC'],
     githubUrl: 'https://github.com/aman1784/ContactBook',
+    liveUrl: '',
     category: 'Personal',
     details: {
       problem: 'Create a foundational Java application to manage a personal list of contacts.',
@@ -47,6 +50,7 @@ export const projects = [
     description: 'A full-stack web application to manage a list of tasks.',
     techStack: ['Java', 'SpringBoot', 'Spring Data Jpa', 'Hibernate', 'H2-Database', 'HTML', 'CSS', 'JavaScript'],
     githubUrl: 'https://github.com/aman1784/todo-list',
+    liveUrl: 'https://todo-list-backend-frontend.onrender.com',
     category: 'Personal',
     details: {
       problem: 'Build a classic Todo list application to practice full-stack development, connecting a Java backend to a web interface.',
@@ -54,25 +58,13 @@ export const projects = [
       outcomes: 'A functional web application where users can create, view, update, and delete their tasks, showcasing the ability to build and connect a backend API with a frontend interface.',
     },
   },
-  // {
-  //   slug: 'billing-software',
-  //   title: 'Billing Software',
-  //   description: 'A simple Python-based application to accelerate billing calculations.',
-  //   techStack: ['Python'],
-  //   githubUrl: 'https://github.com/aman1784/billing-software',
-  //   category: 'Personal',
-  //   details: {
-  //     problem: 'Manual billing can be slow and prone to errors. I wanted to create a simple tool to make this process faster and more accurate.',
-  //     role: 'I wrote a Python script that takes item details as input and quickly calculates the total bill, including any applicable taxes. It was a focused exercise in Python scripting.',
-  //     outcomes: 'A lightweight and fast script that serves as a proof-of-concept for a simple billing tool, speeding up the calculation process for customers.',
-  //   },
-  // },
   {
     slug: 'job-application-api',
     title: 'Job Application API',
     description: 'A backend API for a conceptual job application platform.',
     techStack: ['Java', 'SpringBoot', 'MySQL', 'Hibernate'],
     githubUrl: '',
+    liveUrl: '',
     category: 'Personal',
     details: {
       problem: 'Design the backend infrastructure for a platform where companies can post job openings and users can leave reviews for companies.',
@@ -86,6 +78,7 @@ export const projects = [
     description: 'An interactive online quiz web application built with vanilla web technologies.',
     techStack: ['HTML', 'CSS', 'JavaScript'],
     githubUrl: 'https://github.com/aman1784/quiz',
+    liveUrl: '',
     category: 'Personal',
     details: {
       problem: 'Develop an engaging, client-side web application to test a user\'s knowledge on a topic.',

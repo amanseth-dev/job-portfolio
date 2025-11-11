@@ -38,13 +38,22 @@ const ProjectCard = ({ project }: { project: Project }) => (
         <DialogTrigger asChild>
           <Button variant="outline">View Details</Button>
         </DialogTrigger>
-        {project.githubUrl && project.category !== 'Professional' && (
-          <Button asChild variant="ghost" size="icon">
-            <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-              <Github className="h-5 w-5" />
-            </Link>
-          </Button>
-        )}
+        <div className="flex items-center gap-2">
+          {project.liveUrl && (
+            <Button asChild variant="outline" size="icon">
+              <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="h-5 w-5" />
+              </Link>
+            </Button>
+          )}
+          {project.githubUrl && project.category !== 'Professional' && (
+            <Button asChild variant="ghost" size="icon">
+              <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                <Github className="h-5 w-5" />
+              </Link>
+            </Button>
+          )}
+        </div>
       </CardFooter>
     </Card>
     <DialogContent className="sm:max-w-[625px] my-8">
@@ -73,15 +82,22 @@ const ProjectCard = ({ project }: { project: Project }) => (
             <p className="text-muted-foreground">{project.details.outcomes}</p>
           </div>
         </div>
-        {project.githubUrl && project.category !== 'Professional' && (
-          <div className="mt-4 flex justify-end">
-            <Button asChild>
-                <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                  View on GitHub <ExternalLink className="h-4 w-4 ml-2" />
-                </Link>
-              </Button>
-          </div>
-        )}
+        <div className="mt-4 flex justify-end gap-2">
+            {project.liveUrl && (
+                <Button asChild>
+                    <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        View Live <ExternalLink className="h-4 w-4 ml-2" />
+                    </Link>
+                </Button>
+            )}
+            {project.githubUrl && project.category !== 'Professional' && (
+                <Button asChild>
+                    <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                    View on GitHub <ExternalLink className="h-4 w-4 ml-2" />
+                    </Link>
+                </Button>
+            )}
+        </div>
       </ScrollArea>
     </DialogContent>
   </Dialog>
@@ -107,14 +123,14 @@ export default function Projects() {
             <TabsTrigger value="personal">Personal</TabsTrigger>
           </TabsList>
           <TabsContent value="professional">
-            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 justify-center">
+            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               {professionalProjects.map((project) => (
                 <ProjectCard key={project.slug} project={project} />
               ))}
             </div>
           </TabsContent>
           <TabsContent value="personal">
-            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 justify-center">
+            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               {personalProjects.map((project) => (
                 <ProjectCard key={project.slug} project={project} />
               ))}

@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Code, Download } from 'lucide-react';
+import { Menu, Code, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { navLinks } from '@/lib/data';
@@ -23,28 +23,31 @@ export default function Header() {
           </Link>
         </div>
 
-        <nav className="hidden gap-6 md:flex">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="flex items-center text-lg font-medium text-foreground/60 transition-colors hover:text-foreground/80 sm:text-sm"
-            >
-              {link.name}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="flex items-center justify-end space-x-2">
+        <div className="hidden items-center gap-6 md:flex">
+          <nav className="flex gap-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="flex items-center text-lg font-medium text-foreground/60 transition-colors hover:text-foreground/80 sm:text-sm"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </nav>
           <Button asChild variant="outline">
             <a href="https://drive.google.com/file/d/1Ff_pf0OsQRNxs8Bx4bUHJwyhuizP-5pZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <Download className="mr-2 h-4 w-4" /> Resume
             </a>
           </Button>
           <ThemeToggle />
+        </div>
+
+        <div className="flex items-center justify-end md:hidden">
+          <ThemeToggle />
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden">
+              <Button variant="ghost" size="icon">
                 <Menu />
                 <span className="sr-only">Open Menu</span>
               </Button>
@@ -66,16 +69,18 @@ export default function Header() {
                       {link.name}
                     </Link>
                   ))}
+                </nav>
+                <Button asChild variant="outline" className="mt-6">
                   <a
                     href="https://drive.google.com/file/d/1Ff_pf0OsQRNxs8Bx4bUHJwyhuizP-5pZ/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-lg font-medium"
                     onClick={() => setIsOpen(false)}
                   >
+                    <Download className="mr-2 h-4 w-4" />
                     Resume
                   </a>
-                </nav>
+                </Button>
               </div>
             </SheetContent>
           </Sheet>

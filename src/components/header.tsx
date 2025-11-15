@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Code } from 'lucide-react';
+import { Menu, X, Code, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { navLinks } from '@/lib/data';
@@ -36,6 +36,11 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center justify-end space-x-2">
+          <Button asChild variant="outline">
+            <a href="https://drive.google.com/file/d/1Ff_pf0OsQRNxs8Bx4bUHJwyhuizP-5pZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <Download className="mr-2 h-4 w-4" /> Resume
+            </a>
+          </Button>
           <ThemeToggle />
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
@@ -61,6 +66,15 @@ export default function Header() {
                       {link.name}
                     </Link>
                   ))}
+                  <a
+                    href="https://drive.google.com/file/d/1Ff_pf0OsQRNxs8Bx4bUHJwyhuizP-5pZ/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-medium"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Resume
+                  </a>
                 </nav>
               </div>
             </SheetContent>

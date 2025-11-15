@@ -17,6 +17,21 @@ export const projects = [
       outcomes: 'The system provided garages with a proper online workbook, replacing the cumbersome physical one. It improved data management, streamlined the billing process, and enhanced customer communication through automated notifications.',
     },
   },
+  // {
+  //   slug: 'customer-car-services',
+  //   title: 'Customer Car Services',
+  //   description: 'A website where customers can enter and decode their car number to view the estimated prices for various car services.',
+  //   techStack: ['Java', 'SpringBoot', 'Spring Data JPA', 'Hibernate', 'MySQL'],
+  //   githubUrl: '',
+  //   liveUrl: '',
+  //   videoUrl: '',
+  //   category: 'Professional',
+  //   details: {
+  //     problem: 'Customers were unable to find accurate estimates for getting their cars serviced.',
+  //     role: 'I developed the backend APIs that fetch and validate data from the database. I formatted this data properly and delivered it to the frontend, which then presented it effectively through the user interface.',
+  //     outcomes: 'With this exceptional website, customers no longer need to search around for service estimates. They can now easily view the estimated pricing for their car services from the comfort of their home.',
+  //   },
+  // },
   {
     slug: 'ondc-api',
     title: 'ONDC API',

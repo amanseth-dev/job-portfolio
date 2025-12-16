@@ -11,6 +11,25 @@ import { ThemeToggle } from '@/components/theme-toggle';
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleMobileLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setIsOpen(false);
+
+    setTimeout(() => {
+      const targetElement = document.querySelector(href);
+      if (targetElement) {
+        const headerOffset = 56; // Height of the sticky header
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+    
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth',
+        });
+      }
+    }, 100);
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center justify-between">
@@ -64,7 +83,7 @@ export default function Header() {
                       key={link.name}
                       href={link.href}
                       className="text-lg font-medium"
-                      onClick={() => setIsOpen(false)}
+                      onClick={(e) => handleMobileLinkClick(e, link.href)}
                     >
                       {link.name}
                     </Link>

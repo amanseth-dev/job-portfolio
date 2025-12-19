@@ -47,7 +47,7 @@ export default function Contact() {
                   </Link>
                 </Button>
                  <Button asChild variant="outline">
-                  <a href="https://drive.google.com/file/d/1Ff_pf0OsQRNxs8Bx4bUHJwyhuizP-5pZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <a href="https://drive.google.com/file/d/1qiu4iB9ILnaCe3Qj6alL65nYMf0xMxbH/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <Download className="mr-2 h-4 w-4" /> Download Resume
                   </a>
                 </Button>

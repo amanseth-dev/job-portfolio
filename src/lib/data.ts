@@ -151,7 +151,7 @@ export const experiences = [
     {
         company: "Autoverse Mobility Pvt. Ltd., Bengaluru",
         role: "Software Engineer",
-        duration: "March 2025 - Present",
+        duration: "March 2025 - Jan 2026",
         description: [
             "Designed, developed, and maintained scalable RESTful APIs for a Garage Management System using Java 17 and the Spring Boot framework.",
             "Integrated the RazorPay payment gateway using their REST APIs, enabling secure and reliable online transactions for all garage services.",

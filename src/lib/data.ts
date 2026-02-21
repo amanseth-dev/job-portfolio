@@ -149,6 +149,20 @@ export const skills: Skill[] = [
 
 export const experiences = [
     {
+      company: "Virtusa Consulting Services Ltd., Bangalore",
+      role: "Engineer",
+      duration: "Jan 2026 - Present",
+      description: [
+        "Currently undergoing comprehensive training in Java-based Microservices architecture.",
+        "Developing an understanding of designing and building scalable, resilient, and maintainable distributed systems.",
+        "Gaining hands-on experience with service discovery mechanisms using Eureka Server.",
+        "Working with API Gateway implementation for efficient request routing and centralized management.",
+        "Applying distributed tracing techniques to monitor and analyze system performance.",
+        "Implementing circuit breaker patterns to enhance fault tolerance and system stability.",
+        "Utilizing load balancing strategies to ensure high availability and reliability of services."
+      ]
+    },
+    {
         company: "Autoverse Mobility Pvt. Ltd., Bengaluru",
         role: "Software Engineer",
         duration: "March 2025 - Jan 2026",

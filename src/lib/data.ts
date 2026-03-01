@@ -48,6 +48,21 @@ export const projects = [
     },
   },
   {
+    slug: 'backend coffee api',
+    title: 'Backend Coffee API System',
+    description: 'A REST API for a coffee ordering web application that handles authentication, product management, and order processing.',
+    techStack: ['Java', 'SpringBoot', 'Spring Data JPA', 'Hibernate', 'MySQL', 'Postman'],
+    githubUrl: 'https://github.com/aman1784/backend-coffee',
+    liveUrl: '',
+    videoUrl: '',
+    category: 'Personal',
+    details: {
+      problem: 'Develop a backend system for a coffee ordering web application to manage users, products, and orders with proper database integration and REST APIs.',
+      role: 'As the sole backend developer, I designed the database schema, created REST APIs using Spring Boot, implemented authentication, built product and order management modules, and integrated MySQL using Spring Data JPA and Hibernate. I also tested all APIs using Postman to ensure proper request–response flow.',
+      outcomes: 'Successfully built a fully functional backend API that supports user login, profile management, product listing, and order placement, demonstrating strong knowledge of Spring Boot, REST API design, and database integration.'
+  },
+  },
+  {
     slug: 'contacts-book',
     title: 'Contacts Book',
     description: 'A simple application to store and retrieve contact information from a database.',
@@ -66,14 +81,14 @@ export const projects = [
     slug: 'todo-list',
     title: 'Todo List',
     description: 'A full-stack web application to manage a list of tasks.',
-    techStack: ['Java', 'SpringBoot', 'Spring Data Jpa', 'Hibernate', 'H2-Database', 'HTML', 'CSS', 'JavaScript'],
+    techStack: ['Java', 'SpringBoot', 'Spring Data Jpa', 'Hibernate', 'H2-Database', 'Thymeleaf'],
     githubUrl: 'https://github.com/aman1784/todo-list',
     liveUrl: 'https://todo-list-backend-frontend.onrender.com',
     videoUrl: 'https://www.dropbox.com/scl/fi/4qd2kebk8f1ogttc3805h/todo_list.mp4?rlkey=gh93d575wosf0crcapf836mwr&st=ekmvlv7q&raw=1',
     category: 'Personal',
     details: {
       problem: 'Build a classic Todo list application to practice full-stack development, connecting a Java backend to a web interface.',
-      role: 'I developed the Spring Boot backend to handle CRUD (Create, Read, Update, Delete) operations for tasks and built a simple frontend with HTML, CSS, and JavaScript to interact with the API.',
+      role: 'I developed the Spring Boot backend to handle CRUD (Create, Read, Update, Delete) operations for tasks and built a simple frontend with thymeleaf to interact with the API.',
       outcomes: 'A functional web application where users can create, view, update, and delete their tasks, showcasing the ability to build and connect a backend API with a frontend interface.',
     },
   },

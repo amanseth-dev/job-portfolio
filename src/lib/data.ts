@@ -146,6 +146,8 @@ export const skills: Skill[] = [
     { name: 'Java', icon: Code },
     { name: 'Python', icon: Code },
     { name: 'Spring Boot', icon: Server },
+    { name: 'Microservices', icon: Container },
+    { name: 'Spring Cloud', icon: Workflow },
     { name: 'MySQL', icon: Database },
     { name: 'HTML', icon: FileCode },
     { name: 'CSS', icon: FileCode },

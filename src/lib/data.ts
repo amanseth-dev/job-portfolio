@@ -161,6 +161,7 @@ export const skills: Skill[] = [
     { name: 'OOPS', icon: Puzzle },
     { name: 'DBMS', icon: Database },
     { name: 'Data Structures and Algorithms', icon: BrainCircuit },
+    { name: 'Gen AI', icon: BrainCircuit },
     {name: 'Redis Cache', icon: Database}
   ];
 

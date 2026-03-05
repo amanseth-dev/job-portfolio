@@ -1,10 +1,12 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import ParticleBackground from '@/components/particle-background';
 
 export default function Hero() {
   return (
-    <section id="home" className="container py-24 sm:py-32">
+    <section id="home" className="container py-24 sm:py-32 relative">
+      <ParticleBackground />
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl font-headline">
           Aman Kumar Seth
@@ -13,7 +15,7 @@ export default function Hero() {
           Java Spring Boot Backend Developer
         </p>
         <p className="mt-6 text-lg leading-8 text-muted-foreground">
-          I build robust, scalable, and efficient backend solutions. With a year of experience at a fast-paced tech startup, I specialize in creating high-performance APIs and services using Java and Spring Boot.
+          I build robust, scalable, and efficient backend solutions. With ~1.5 years of experience, I specialize in creating high-performance APIs and microservices using Java and Spring Boot.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <Link href="#projects">

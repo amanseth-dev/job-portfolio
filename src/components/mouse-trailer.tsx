@@ -54,9 +54,10 @@ export default function MouseTrailer() {
       className={cn(
         'hidden md:block fixed top-0 left-0 -translate-x-1/2 -translate-y-1/2',
         'pointer-events-none z-[9999] bg-primary/20 rounded-full',
-        'transition-[width,height] duration-300 ease-in-out backdrop-blur-sm',
+        'transition-[width,height,box-shadow] duration-300 ease-in-out backdrop-blur-sm',
+        'shadow-[0_0_20px_hsl(var(--primary)/0.5)]',
         isHoveringInteractive
-          ? 'w-12 h-12 bg-primary/30'
+          ? 'w-12 h-12 bg-primary/30 shadow-[0_0_30px_hsl(var(--primary)/0.7)]'
           : 'w-6 h-6'
       )}
     />

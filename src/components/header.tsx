@@ -7,9 +7,13 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { navLinks } from '@/lib/data';
 import { ThemeToggle } from '@/components/theme-toggle';
+import { useActiveSection } from '@/hooks/use-active-section';
+import { cn } from '@/lib/utils';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const sectionIds = navLinks.map(link => link.href.substring(1));
+  const activeSection = useActiveSection(sectionIds);
 
   const handleMobileLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
@@ -48,7 +52,12 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="flex items-center text-lg font-medium text-foreground/60 transition-colors hover:text-foreground/80 sm:text-sm"
+                className={cn(
+                  "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm",
+                  activeSection === link.href.substring(1)
+                    ? "text-primary font-semibold"
+                    : "text-foreground/60"
+                )}
               >
                 {link.name}
               </Link>
@@ -82,7 +91,12 @@ export default function Header() {
                     <Link
                       key={link.name}
                       href={link.href}
-                      className="text-lg font-medium"
+                      className={cn(
+                        "text-lg font-medium transition-colors hover:text-foreground/80",
+                        activeSection === link.href.substring(1)
+                          ? "text-primary font-semibold"
+                          : "text-foreground/60"
+                      )}
                       onClick={(e) => handleMobileLinkClick(e, link.href)}
                     >
                       {link.name}

@@ -123,7 +123,7 @@ export const projects = [
   {
     slug: 'online-quiz',
     title: 'Online Quiz',
-    description: 'An interactive online quiz web application built with vanilla web technologies.',
+    description: 'An interactive online quiz web application built with HTML, CSS, Javascript.',
     techStack: ['HTML', 'CSS', 'JavaScript'],
     githubUrl: 'https://github.com/aman1784/quiz',
     liveUrl: 'https://aman1784.github.io/quiz/',

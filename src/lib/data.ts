@@ -239,6 +239,11 @@ export const achievements = [
 
 export const certifications = [
     {
+        title: 'Gen AI',
+        issuer: 'Virtusa',
+        url: 'https://www.dropbox.com/scl/fi/ilbdkw2vjo530m9cxpm4l/GenAI-Certificate-Virtusa.png?rlkey=3c8ts8wnbfw8rd2ksr8i5sivn&st=hmnuqy72&raw=1'
+    },
+    {
         title: 'Problem Solving',
         issuer: 'Hackerrank',
         url: 'https://www.hackerrank.com/certificates/0429de5a327e'

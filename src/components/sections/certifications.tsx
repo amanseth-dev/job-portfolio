@@ -1,12 +1,7 @@
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { certifications } from "@/lib/data";
 import Link from 'next/link';
 import { Award, ExternalLink } from 'lucide-react';
@@ -21,26 +16,36 @@ export default function Certifications() {
             Validations of my skills from recognized institutions.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {certifications.map((cert, index) => (
-            <Card key={index} className="flex flex-col text-left transition-transform transform hover:-translate-y-1 hover:shadow-xl">
-              <CardHeader className="items-start">
-                 <div className="p-3 bg-muted rounded-full mb-2">
-                    <Award className="h-6 w-6 text-primary" />
-                  </div>
-                <CardTitle>{cert.title}</CardTitle>
-                <CardDescription>{cert.issuer}</CardDescription>
-              </CardHeader>
-              <CardContent className="flex-grow" />
-              <CardFooter>
-                 <Button asChild className="w-full">
-                    <Link href={cert.url} target="_blank" rel="noopener noreferrer">
-                      View Certificate <ExternalLink className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-              </CardFooter>
-            </Card>
-          ))}
+        <div className="mt-16 max-w-4xl mx-auto">
+          <Card className="transition-shadow hover:shadow-xl">
+            <CardContent className="p-6">
+              <ul className="space-y-6">
+                {certifications.map((cert, index) => (
+                  <li key={index} className="flex flex-col sm:flex-row items-start sm:items-center sm:justify-between gap-4 p-4 rounded-lg hover:bg-background">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 pt-1">
+                        <Award className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-foreground">{cert.title}</h3>
+                        <p className="text-sm text-muted-foreground">{cert.issuer}</p>
+                      </div>
+                    </div>
+                    {cert.url && (
+                       <Link 
+                         href={cert.url} 
+                         target="_blank" 
+                         rel="noopener noreferrer" 
+                         className="inline-flex items-center gap-2 text-sm text-primary font-medium hover:underline ml-10 sm:ml-0 shrink-0"
+                       >
+                          View Certificate <ExternalLink className="h-4 w-4" />
+                       </Link>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

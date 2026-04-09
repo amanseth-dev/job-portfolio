@@ -7,7 +7,7 @@ export default function Education() {
     <section id="education" className="py-24 sm:py-32">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Education</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Knowledge Base</h2>
           <p className="mt-2 text-lg leading-8 text-muted-foreground">
             My academic background and qualifications.
           </p>

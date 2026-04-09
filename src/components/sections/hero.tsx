@@ -1,11 +1,20 @@
+"use client";
+
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import ParticleBackground from '@/components/particle-background';
+import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section id="home" className="container py-24 sm:py-32 relative">
+    <motion.section 
+      id="home" 
+      className="container py-24 sm:py-32 relative"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.1 }}
+    >
       <ParticleBackground />
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl font-headline">
@@ -30,6 +39,6 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -1,8 +1,18 @@
+"use client";
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section id="about" className="py-24 sm:py-32 bg-muted/50 dark:bg-card">
+    <motion.section 
+      id="about" 
+      className="py-24 sm:py-32 bg-muted/50 dark:bg-card"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 1 }}
+    >
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
@@ -29,6 +39,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

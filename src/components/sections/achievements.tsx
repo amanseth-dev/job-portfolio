@@ -1,11 +1,21 @@
+"use client";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { achievements } from "@/lib/data";
 import { Star, ExternalLink, Trophy } from "lucide-react";
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export default function Achievements() {
   return (
-    <section id="achievements" className="py-24 sm:py-32">
+    <motion.section 
+      id="achievements" 
+      className="py-24 sm:py-32"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 1 }}
+    >
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Achievements</h2>
@@ -41,6 +51,6 @@ export default function Achievements() {
           </Card>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

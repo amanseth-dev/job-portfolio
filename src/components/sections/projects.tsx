@@ -17,6 +17,7 @@ import Link from 'next/link';
 import { Github, ExternalLink, Video } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { motion } from 'framer-motion';
 
 type Project = (typeof projects)[0];
 
@@ -123,7 +124,14 @@ export default function Projects() {
   const personalProjects = useMemo(() => projects.filter(p => p.category === 'Personal'), []);
 
   return (
-    <section id="projects" className="py-24 sm:py-32 bg-muted/50 dark:bg-card">
+    <motion.section 
+      id="projects" 
+      className="py-24 sm:py-32 bg-muted/50 dark:bg-card"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 1 }}
+    >
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">My Work</h2>
@@ -154,6 +162,6 @@ export default function Projects() {
         </Tabs>
 
       </div>
-    </section>
+    </motion.section>
   );
 }

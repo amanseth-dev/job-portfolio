@@ -1,10 +1,20 @@
+"use client";
+
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { education } from "@/lib/data";
 import { GraduationCap } from "lucide-react";
+import { motion } from 'framer-motion';
 
 export default function Education() {
   return (
-    <section id="education" className="py-24 sm:py-32">
+    <motion.section 
+      id="education" 
+      className="py-24 sm:py-32"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 1 }}
+    >
       <div className="container">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Knowledge Base</h2>
@@ -37,6 +47,6 @@ export default function Education() {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

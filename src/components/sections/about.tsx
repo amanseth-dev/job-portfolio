@@ -19,7 +19,7 @@ export default function About() {
             </div>
           </div>
           <div>
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">About Me</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Story So Far</h2>
             <p className="mt-4 text-lg text-muted-foreground">
               I am a passionate backend developer with a foundation in Computer Science and hands-on experience from a dynamic tech startup. My journey in tech is driven by a desire to solve complex problems and build things that work seamlessly behind the scenes.
             </p>

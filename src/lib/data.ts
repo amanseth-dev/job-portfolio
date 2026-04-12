@@ -49,7 +49,7 @@ export const projects = [
   },
   {
     slug: 'backend coffee api',
-    title: 'Backend Coffee API System',
+    title: 'Caffeine Engine',
     description: 'A REST API for a coffee ordering web application that handles authentication, product management, and order processing.',
     techStack: ['Java', 'SpringBoot', 'Spring Data JPA', 'Hibernate', 'MySQL', 'Postman'],
     githubUrl: 'https://github.com/aman1784/backend-coffee',

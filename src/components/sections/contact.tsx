@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Download, Mail, Phone, MapPin } from "lucide-react"
+import { Github, Linkedin, Download, Mail, Phone, MapPin, Code } from "lucide-react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 
@@ -52,6 +52,11 @@ export default function Contact() {
                 <Button asChild variant="outline" size="icon">
                   <Link href="https://www.linkedin.com/in/aman-seth-926833195" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="h-5 w-5" />
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" size="icon">
+                  <Link href="https://leetcode.com/u/amanseth-syntax-sniper/" title="LeetCode" target="_blank" rel="noopener noreferrer">
+                    <Code className="h-5 w-5" />
                   </Link>
                 </Button>
                  <Button asChild variant="outline">

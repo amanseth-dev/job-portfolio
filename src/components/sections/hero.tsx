@@ -33,6 +33,8 @@ export default function Hero() {
               1500,
               'Problem Solver',
               1500,
+              'Clean Code Advocate',
+              1500,
             ]}
             wrapper="span"
             speed={40}
@@ -40,7 +42,7 @@ export default function Hero() {
           />
         </div>
         <p className="mt-6 text-lg leading-8 text-muted-foreground">
-          I build robust, scalable, and efficient backend solutions. With ~1.5 years of experience, I specialize in creating high-performance APIs and microservices using Java and Spring Boot.
+          I build robust, scalable, and efficient backend solutions. With ~1.6 years of experience, I specialize in creating high-performance APIs and microservices using Java and Spring Boot.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <Link href="#projects">

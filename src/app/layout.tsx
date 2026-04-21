@@ -10,7 +10,29 @@ export const metadata: Metadata = {
   icons: {
     icon: 'https://www.dropbox.com/scl/fi/xvxas23kts1igots1e60z/portfolio_image.jpg?rlkey=o9delacy0k9v01mns1z05ip6k&raw=1',
   },
-  keywords: 'aman kumar seth, amankrseth, portfolio, Aman Kumar Seth, Java Developer, Software Engineer, Springboot, Backend Developer, backend, Hibernate, amankrseth.netlify.app, Aman Seth, aman kr seth linkedin'
+  keywords: 'aman kumar seth, amankrseth, portfolio, Aman Kumar Seth, Java Developer, Software Engineer, Springboot, Backend Developer, backend, Hibernate, amankrseth.netlify.app, Aman Seth, aman kr seth linkedin',
+  openGraph: {
+    title: 'Aman Kumar Seth | Backend Developer',
+    description: 'Portfolio of Aman Kumar Seth, backend developer specializing in Java and Spring Boot.',
+    url: 'https://amankrseth.netlify.app',
+    siteName: 'Aman Kumar Seth Portfolio',
+    images: [
+      {
+        url: 'https://www.dropbox.com/scl/fi/xvxas23kts1igots1e60z/portfolio_image.jpg?rlkey=o9delacy0k9v01mns1z05ip6k&raw=1',
+        width: 800,
+        height: 600,
+        alt: 'Aman Kumar Seth',
+      },
+    ],
+    locale: 'en_IN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Aman Kumar Seth | Backend Developer',
+    description: 'Portfolio of Aman Kumar Seth, backend developer specializing in Java and Spring Boot.',
+    images: ['https://www.dropbox.com/scl/fi/xvxas23kts1igots1e60z/portfolio_image.jpg?rlkey=o9delacy0k9v01mns1z05ip6k&raw=1'],
+  },
 };
 
 export default function RootLayout({

@@ -241,7 +241,7 @@ export const certifications = [
     {
         title: 'Generative AI for Beginners',
         issuer: 'Udemy Course',
-        url: 'https://udemy-certificate.s3.amazonaws.com/image/UC-9168e1da-52d5-40ca-a5f7-d7c8e67a9322.jpg'
+        url: 'ude.my/UC-9168e1da-52d5-40ca-a5f7-d7c8e67a9322'
     },
     {
         title: 'Gen AI',

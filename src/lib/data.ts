@@ -239,6 +239,11 @@ export const achievements = [
 
 export const certifications = [
     {
+        title: 'Generative AI for Beginners',
+        issuer: 'Udemy Course',
+        url: 'https://udemy-certificate.s3.amazonaws.com/image/UC-9168e1da-52d5-40ca-a5f7-d7c8e67a9322.jpg'
+    },
+    {
         title: 'Gen AI',
         issuer: 'Virtusa',
         url: 'https://www.dropbox.com/scl/fi/ilbdkw2vjo530m9cxpm4l/GenAI-Certificate-Virtusa.png?rlkey=3c8ts8wnbfw8rd2ksr8i5sivn&st=hmnuqy72&raw=1'

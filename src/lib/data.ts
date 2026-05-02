@@ -171,13 +171,11 @@ export const experiences = [
       role: "Engineer",
       duration: "Jan 2026 - Present",
       description: [
-        "Currently undergoing comprehensive training in Java-based Microservices architecture.",
-        "Developing an understanding of designing and building scalable, resilient, and maintainable distributed systems.",
-        "Gaining hands-on experience with service discovery mechanisms using Eureka Server.",
-        "Working with API Gateway implementation for efficient request routing and centralized management.",
-        "Applying distributed tracing techniques to monitor and analyze system performance.",
-        "Implementing circuit breaker patterns to enhance fault tolerance and system stability.",
-        "Utilizing load balancing strategies to ensure high availability and reliability of services."
+        "Completed enterprise training in Java, Spring Boot, and Microservices Architecture.",
+        "Built capstone project simulating a Digital Banking Management System using Java and Spring Boot.",
+        "Worked with Spring Cloud components such as Eureka Server and API Gateway for service discovery and routing.",
+        "Practiced secure API development using Spring Security and JWT authentication.",
+        "Strengthening backend fundamentals including SQL, REST APIs, distributed systems, and scalable service design."
       ]
     },
     {

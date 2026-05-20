@@ -221,18 +221,22 @@ export const navLinks = [
 ];
 
 export const achievements = [
-    {
-        description: 'Five stars in Java at Hackerrank',
-        url: 'https://www.hackerrank.com/profile/CS1900100100017'
-    },
-    {
-        description: 'Four stars in Python at Hackerrank',
-        url: 'https://www.hackerrank.com/profile/CS1900100100017'
-    },
-    {
-        description: 'Scored 157/175 marks in JOB-A-THON 15.0 hiring contest by GeeksForGeeks',
-        url: 'https://media.geeksforgeeks.org/auth-certificates/1672079400/c6532e518f83d5eb8cd0ec7e9e52d584.png'
-    }
+  {
+    description: 'Attended Google AI Bootcamp — learned Stitch by Google and Antigravity (Apr 2026)',
+    url: '',
+  },
+  {
+    description: 'Five stars in Java at Hackerrank',
+    url: 'https://www.hackerrank.com/profile/CS1900100100017',
+  },
+  {
+    description: 'Four stars in Python at Hackerrank',
+    url: 'https://www.hackerrank.com/profile/CS1900100100017',
+  },
+  {
+    description: 'Scored 157/175 marks in JOB-A-THON 15.0 hiring contest by GeeksForGeeks',
+    url: 'https://media.geeksforgeeks.org/auth-certificates/1672079400/c6532e518f83d5eb8cd0ec7e9e52d584.png',
+  }
 ];
 
 export const certifications = [

@@ -39,9 +39,11 @@ export default function Achievements() {
                     <div className="flex-grow">
                       <p className="text-muted-foreground leading-relaxed">
                         {achievement.description}
-                        <Link href={achievement.url} target="_blank" rel="noopener noreferrer" className="inline-block ml-2 text-primary hover:underline">
-                           <ExternalLink className="inline-block h-4 w-4" />
-                        </Link>
+                        {achievement.url ? (
+                          <Link href={achievement.url} target="_blank" rel="noopener noreferrer" className="inline-block ml-2 text-primary hover:underline">
+                            <ExternalLink className="inline-block h-4 w-4" />
+                          </Link>
+                        ) : null}
                       </p>
                     </div>
                   </li>

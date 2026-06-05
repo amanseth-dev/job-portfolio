@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Code, Server, Network, Database, Container, GitMerge, FileCode, Workflow, Puzzle, BrainCircuit } from 'lucide-react';
+import { Braces, Code, Server, Network, Database, Container, GitMerge, FileCode, Workflow, Puzzle, BrainCircuit, TestTube, Shield } from 'lucide-react';
 
 export const projects = [
   {
@@ -143,12 +143,14 @@ type Skill = {
 };
 
 export const skills: Skill[] = [
-    { name: 'Java', icon: Code },
-    { name: 'Python', icon: Code },
+    { name: 'Java', icon: Braces },
+    { name: 'Python', icon: Braces },
     { name: 'Spring Boot', icon: Server },
+    { name: 'Spring Security', icon: Shield },
     { name: 'Microservices', icon: Container },
     { name: 'Spring Cloud', icon: Workflow },
     { name: 'MySQL', icon: Database },
+    { name: 'Data Structures and Algorithms', icon: BrainCircuit },
     { name: 'HTML', icon: FileCode },
     { name: 'CSS', icon: FileCode },
     { name: 'IntelliJ Idea', icon: Code },
@@ -160,9 +162,9 @@ export const skills: Skill[] = [
     { name: 'PyCharm', icon: Code },
     { name: 'OOPS', icon: Puzzle },
     { name: 'DBMS', icon: Database },
-    { name: 'Data Structures and Algorithms', icon: BrainCircuit },
     { name: 'Gen AI', icon: BrainCircuit },
-    {name: 'Redis Cache', icon: Database}
+    { name: 'Redis Cache', icon: Database },
+    { name: 'JUnit5', icon: TestTube }
   ];
 
 export const experiences = [

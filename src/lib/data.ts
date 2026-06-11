@@ -48,7 +48,7 @@ export const projects = [
     },
   },
   {
-    slug: 'backend coffee api',
+    slug: 'backend-coffee-api',
     title: 'Caffeine Engine',
     description: 'A REST API for a coffee ordering web application that handles authentication, product management, and order processing.',
     techStack: ['Java', 'SpringBoot', 'Spring Data JPA', 'Hibernate', 'MySQL', 'Postman'],
@@ -60,7 +60,22 @@ export const projects = [
       problem: 'Develop a backend system for a coffee ordering web application to manage users, products, and orders with proper database integration and REST APIs.',
       role: 'As the sole backend developer, I designed the database schema, created REST APIs using Spring Boot, implemented authentication, built product and order management modules, and integrated MySQL using Spring Data JPA and Hibernate. I also tested all APIs using Postman to ensure proper request–response flow.',
       outcomes: 'Successfully built a fully functional backend API that supports user login, profile management, product listing, and order placement, demonstrating strong knowledge of Spring Boot, REST API design, and database integration.'
+    },
   },
+  {
+    slug: 'docker-commands',
+    title: 'Docker Commands',
+    description: 'A concise repository documenting essential Docker CLI commands and workflows.',
+    techStack: ['Docker', 'CLI'],
+    githubUrl: 'https://github.com/aman1784/docker-commands',
+    liveUrl: '',
+    videoUrl: '',
+    category: 'Personal',
+    details: {
+      problem: 'Many developers need a quick Docker CLI reference for building, running, and managing containers.',
+      role: 'As the sole developer, Compiled a concise Docker CLI command reference and usage examples in a single README file, including those for building images, running containers, and managing volumes.',
+      outcomes: 'A well-organized resource containing a wide range of Docker commands that can be used for various container management tasks/commands, making Docker more accessible and easier to use for developers of all levels.'
+    },
   },
   {
     slug: 'contacts-book',

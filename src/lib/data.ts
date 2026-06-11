@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Braces, Code, Server, Network, Database, Container, GitMerge, FileCode, Workflow, Puzzle, BrainCircuit, TestTube, Shield } from 'lucide-react';
+import { Braces, Code, Server, Network, Database, Container, GitMerge, FileCode, Workflow, Puzzle, BrainCircuit, TestTube, Shield, ShipWheel, Package, Boxes } from 'lucide-react';
 
 export const projects = [
   {
@@ -147,7 +147,8 @@ export const skills: Skill[] = [
     { name: 'Python', icon: Braces },
     { name: 'Spring Boot', icon: Server },
     { name: 'Spring Security', icon: Shield },
-    { name: 'Microservices', icon: Container },
+    { name: 'Docker', icon: Container },
+    { name: 'Microservices', icon: Boxes },
     { name: 'Spring Cloud', icon: Workflow },
     { name: 'MySQL', icon: Database },
     { name: 'Data Structures and Algorithms', icon: BrainCircuit },

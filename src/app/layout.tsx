@@ -79,6 +79,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        <meta name="google-site-verification" content="google5a9e663dd6fb17c2.htm" />
       </head>
       <body className="font-body antialiased">
         <ThemeProvider

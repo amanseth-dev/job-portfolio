@@ -21,9 +21,6 @@ export default function Hero() {
         <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl font-headline">
           Aman Kumar Seth
         </h1>
-        {/* <p className="mt-4 text-lg text-primary">
-          Java Spring Boot Backend Developer
-        </p> */}
         <div className="mt-4 text-lg text-primary font-medium h-7 flex items-center justify-center">
           <TypeAnimation
             sequence={[
@@ -42,7 +39,7 @@ export default function Hero() {
           />
         </div>
         <p className="mt-6 text-lg leading-8 text-muted-foreground">
-          I build robust, scalable, and efficient backend solutions. With ~1.8 years of experience, I specialize in creating high-performance APIs and microservices using Java and Spring Boot.
+          I build robust, scalable, and efficient backend solutions. With ~1.8 years of experience, I specialize in high-performance APIs and Spring Boot microservices.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <Link href="#projects">

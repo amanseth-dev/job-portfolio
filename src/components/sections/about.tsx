@@ -31,10 +31,10 @@ export default function About() {
           <div>
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Story So Far</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              I am a passionate backend developer with a foundation in Computer Science and hands-on experience from a dynamic tech startup. My journey in tech is driven by a desire to solve complex problems and build things that work seamlessly behind the scenes.
+              I am a passionate backend developer with a foundation in Computer Science and hands-on experience from a dynamic tech startup. My journey in tech is driven by a desire to solve complex problems and build systems that work seamlessly behind the scenes.
             </p>
             <p className="mt-4 text-lg text-muted-foreground">
-              My development philosophy is centered around writing clean, maintainable code and following an API-first approach. I believe in building systems that are not only powerful but also easy to understand and extend.
+              My development philosophy is centered around writing clean, maintainable code and following an API-first approach. I believe in building backend systems that are powerful, reliable, and easy to extend.
             </p>
           </div>
         </div>

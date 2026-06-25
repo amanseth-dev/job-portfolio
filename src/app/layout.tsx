@@ -5,20 +5,35 @@ import { ThemeProvider } from "@/components/theme-provider";
 import MouseTrailer from '@/components/mouse-trailer';
 
 export const metadata: Metadata = {
-  title: 'Aman Kumar Seth | Backend Developer',
-  description: "Portfolio of Aman Kumar Seth, backend developer specializing in Java and Spring Boot.",
-  icons: {
-    icon: 'https://www.dropbox.com/scl/fi/t4w2d132h2eoeer5kebwo/Profile_Pic.png?rlkey=hgxpn3573gnmoj6h2hao0gaml&st=f69i0tvj&raw=1',
+  metadataBase: new URL('https://amankrseth.netlify.app'),
+  title: 'Aman Kumar Seth | Java Spring Boot Backend Developer',
+  description: 'Aman Kumar Seth helps CTOs and engineering leaders build scalable backend systems, resilient APIs, and production-ready Spring Boot services.',
+  alternates: {
+    canonical: 'https://amankrseth.netlify.app/',
   },
-  keywords: 'aman kumar seth, amankrseth, portfolio, Aman Kumar Seth, Java Developer, Software Engineer, Springboot, Backend Developer, backend, Hibernate, amankrseth.netlify.app, Aman Seth, aman kr seth linkedin',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  icons: {
+    icon: '/profile-pic.png',
+  },
+  keywords: 'Aman Kumar Seth, amankrseth, AmanKumarSeth, backend engineer, Java Spring Boot developer, API architect, microservices engineer, backend systems for CTOs, engineering leader portfolio, software engineering leadership, scalable backend systems, Spring Boot API developer',
   openGraph: {
-    title: 'Aman Kumar Seth | Backend Developer',
-    description: 'Portfolio of Aman Kumar Seth, backend developer specializing in Java and Spring Boot.',
+    title: 'Aman Kumar Seth | Java Spring Boot Backend Developer for CTOs & Engineering Leaders',
+    description: 'Aman Kumar Seth helps CTOs and engineering leaders build scalable backend systems, resilient APIs, and production-ready Spring Boot services.',
     url: 'https://amankrseth.netlify.app',
     siteName: 'Aman Kumar Seth Portfolio',
     images: [
       {
-        url: 'https://www.dropbox.com/scl/fi/t4w2d132h2eoeer5kebwo/Profile_Pic.png?rlkey=hgxpn3573gnmoj6h2hao0gaml&st=f69i0tvj&raw=1',
+        url: 'https://amankrseth.netlify.app/profile-pic.png',
         width: 800,
         height: 600,
         alt: 'Aman Kumar Seth',
@@ -29,10 +44,24 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Aman Kumar Seth | Backend Developer',
-    description: 'Portfolio of Aman Kumar Seth, backend developer specializing in Java and Spring Boot.',
-    images: ['https://www.dropbox.com/scl/fi/t4w2d132h2eoeer5kebwo/Profile_Pic.png?rlkey=hgxpn3573gnmoj6h2hao0gaml&st=f69i0tvj&raw=1'],
+    title: 'Aman Kumar Seth | Java Spring Boot Backend Developer for CTOs & Engineering Leaders',
+    description: 'Aman Kumar Seth helps CTOs and engineering leaders build scalable backend systems, resilient APIs, and production-ready Spring Boot services.',
+    images: ['https://amankrseth.netlify.app/profile-pic.png'],
   },
+};
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Aman Kumar Seth',
+  url: 'https://amankrseth.netlify.app',
+  jobTitle: 'Java Spring Boot Backend Developer',
+  description: 'Backend engineer specializing in scalable APIs, microservices, and backend systems for CTOs and engineering leaders.',
+  sameAs: [
+    'https://www.linkedin.com/in/aman-seth-926833195',
+    'https://github.com/aman1784',
+    'https://leetcode.com/u/amanseth-syntax-sniper/',
+  ],
 };
 
 export default function RootLayout({
@@ -46,6 +75,10 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </head>
       <body className="font-body antialiased">
         <ThemeProvider

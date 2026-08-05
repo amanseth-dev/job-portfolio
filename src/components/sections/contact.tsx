@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Download, Mail, Phone, MapPin, Code } from "lucide-react"
+import { Github, Linkedin, Download, Mail, Phone, MapPin, Code, CalendarDays } from "lucide-react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 
@@ -62,6 +62,13 @@ export default function Contact() {
                  <Button asChild variant="outline">
                   <a href="https://drive.google.com/file/d/1qiu4iB9ILnaCe3Qj6alL65nYMf0xMxbH/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <Download className="mr-2 h-4 w-4" /> Download Resume
+                  </a>
+                </Button>
+              </div>
+              <div className="flex justify-center">
+                <Button asChild variant="outline">
+                  <a href="https://meet.brevo.com/aman-seth" target="_blank" rel="noopener noreferrer">
+                    <CalendarDays className="mr-2 h-4 w-4" /> Book a Meeting
                   </a>
                 </Button>
               </div>

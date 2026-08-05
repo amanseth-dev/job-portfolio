@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, CalendarDays } from 'lucide-react';
 import Link from 'next/link';
 import ParticleBackground from '@/components/particle-background';
 import { motion } from 'framer-motion';
@@ -41,10 +41,15 @@ export default function Hero() {
         <p className="mt-6 text-lg leading-8 text-muted-foreground">
           I build robust, scalable, and efficient backend solutions. With ~1.8 years of experience, I specialize in high-performance APIs and Spring Boot microservices.
         </p>
-        <div className="mt-10 flex items-center justify-center gap-x-6">
+        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-x-6">
           <Link href="#projects">
             <Button size="lg">
               View My Work
+            </Button>
+          </Link>
+          <Link href="https://meet.brevo.com/aman-seth" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" variant="outline">
+              Book a Meeting <CalendarDays className="ml-2 h-4 w-4" />
             </Button>
           </Link>
           <Link href="#contact">

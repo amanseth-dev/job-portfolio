@@ -50,16 +50,16 @@ export const projects = [
   {
     slug: 'backend-coffee-api',
     title: 'Caffeine Engine',
-    description: 'A REST API for a coffee ordering web application that handles authentication, product management, and order processing.',
-    techStack: ['Java', 'SpringBoot', 'Spring Data JPA', 'Hibernate', 'MySQL', 'Postman'],
+    description: 'A production-style backend for a coffee ordering platform — Redis caching, a Bloom filter for fast lookups, async Razorpay payment integration, and a clean layered architecture across 15+ REST APIs.',
+    techStack: ['Java', 'SpringBoot', 'Spring Data JPA', 'Hibernate', 'MySQL', 'Redis', 'Guava (Bloom Filter)', 'Razorpay', 'MapStruct', 'Postman'],
     githubUrl: 'https://github.com/aman1784/backend-coffee',
     liveUrl: '',
     videoUrl: '',
     category: 'Personal',
     details: {
-      problem: 'Develop a backend system for a coffee ordering web application to manage users, products, and orders with proper database integration and REST APIs.',
-      role: 'As the sole backend developer, I designed the database schema, created REST APIs using Spring Boot, implemented authentication, built product and order management modules, and integrated MySQL using Spring Data JPA and Hibernate. I also tested all APIs using Postman to ensure proper request–response flow.',
-      outcomes: 'Successfully built a fully functional backend API that supports user login, profile management, product listing, and order placement, demonstrating strong knowledge of Spring Boot, REST API design, and database integration.'
+      problem: 'Design and build a scalable backend for a coffee ordering platform — covering product catalog management, cart, order processing, and online payments — with performance and reliability in mind rather than just CRUD.',
+      role: 'As the sole backend developer, I designed the relational schema and a layered Controller → UseCase → Service → Repository architecture, and built 15+ REST APIs for product browsing, cart persistence, order placement, and profile management using Spring Boot and Spring Data JPA/Hibernate. I added a Redis caching layer for high-traffic read endpoints, a Guava Bloom Filter to avoid unnecessary DB lookups during signup, and integrated Razorpay for online payments with asynchronous payment-link generation and idempotent webhook handling. I used MapStruct for entity–DTO mapping and tested every endpoint end-to-end with Postman.',
+      outcomes: 'Delivered a fully functional, cache-optimized backend supporting product listing, cart management, order placement, and online payments — demonstrating practical experience with caching strategies, async processing, payment gateway integration, and clean layered API design in Spring Boot.'
     },
   },
   {

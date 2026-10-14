@@ -86,16 +86,20 @@ const ProjectCard = ({ project }: { project: Project }) => (
         )}
         <div className="grid gap-4 py-4 text-left">
           <div>
-            <h3 className="font-semibold mb-2">Problem</h3>
-            <p className="text-muted-foreground">{project.details.problem}</p>
+            <h3 className="font-semibold mb-2">Summary</h3>
+            <p className="text-muted-foreground">{project.details.summary}</p>
           </div>
           <div>
-            <h3 className="font-semibold mb-2">My Role & Contribution</h3>
+            <h3 className="font-semibold mb-2">Role</h3>
             <p className="text-muted-foreground">{project.details.role}</p>
           </div>
           <div>
-            <h3 className="font-semibold mb-2">Outcomes & Results</h3>
-            <p className="text-muted-foreground">{project.details.outcomes}</p>
+            <h3 className="font-semibold mb-2">Highlights</h3>
+            <p className="text-muted-foreground">{project.details.highlights}</p>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-2">Note</h3>
+            <p className="text-muted-foreground">{project.details.note}</p>
           </div>
         </div>
         <div className="mt-4 flex justify-end gap-2">

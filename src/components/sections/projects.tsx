@@ -136,10 +136,12 @@ const ProjectCard = ({ project }: { project: Project }) => (
             <h3 className="font-semibold mb-2">Highlights</h3>
             <p className="text-muted-foreground">{project.details.highlights}</p>
           </div>
-          <div>
-            <h3 className="font-semibold mb-2">Note</h3>
-            <p className="text-muted-foreground">{project.details.note}</p>
-          </div>
+          {project.details.note && (
+            <div>
+              <h3 className="font-semibold mb-2">Note</h3>
+              <p className="text-muted-foreground">{project.details.note}</p>
+            </div>
+          )}
         </div>
         <div className="mt-4 flex justify-end gap-2">
             {project.liveUrl && (

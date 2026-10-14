@@ -14,12 +14,51 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger } from '@/components/ui/dialog';
 import { projects } from '@/lib/data';
 import Link from 'next/link';
-import { Github, ExternalLink, Video } from 'lucide-react';
+import { Github, ExternalLink, ChevronDown } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { motion } from 'framer-motion';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 
 type Project = (typeof projects)[0];
+
+const ProjectCollection = ({ projects: projectList }: { projects: Project[] }) => {
+  const featuredProjects = projectList.filter((project) => project.featured);
+  const moreProjects = projectList.filter((project) => !project.featured);
+
+  return (
+    <div className="mt-8">
+      {featuredProjects.length > 0 && (
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {featuredProjects.map((project) => (
+            <ProjectCard key={project.slug} project={project} />
+          ))}
+        </div>
+      )}
+      {moreProjects.length > 0 && (
+        <Collapsible className={featuredProjects.length > 0 ? 'mt-8' : undefined}>
+          <CollapsibleTrigger asChild>
+            <Button
+              variant="outline"
+              className="group w-full justify-between"
+              aria-label={`More projects (${moreProjects.length})`}
+            >
+              <span>More projects <span className="text-muted-foreground">({moreProjects.length})</span></span>
+              <ChevronDown className="transition-transform group-data-[state=open]:rotate-180" aria-hidden="true" />
+            </Button>
+          </CollapsibleTrigger>
+          <CollapsibleContent>
+            <div className="mt-6 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {moreProjects.map((project) => (
+                <ProjectCard key={project.slug} project={project} />
+              ))}
+            </div>
+          </CollapsibleContent>
+        </Collapsible>
+      )}
+    </div>
+  );
+};
 
 const ProjectCard = ({ project }: { project: Project }) => (
   <Dialog>
@@ -150,18 +189,10 @@ export default function Projects() {
             <TabsTrigger value="personal">Personal</TabsTrigger>
           </TabsList>
           <TabsContent value="professional">
-            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {professionalProjects.map((project) => (
-                <ProjectCard key={project.slug} project={project} />
-              ))}
-            </div>
+            <ProjectCollection projects={professionalProjects} />
           </TabsContent>
           <TabsContent value="personal">
-            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {personalProjects.map((project) => (
-                <ProjectCard key={project.slug} project={project} />
-              ))}
-            </div>
+            <ProjectCollection projects={personalProjects} />
           </TabsContent>
         </Tabs>
 

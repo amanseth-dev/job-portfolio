@@ -134,7 +134,11 @@ const ProjectCard = ({ project }: { project: Project }) => (
           </div>
           <div>
             <h3 className="font-semibold mb-2">Highlights</h3>
-            <p className="text-muted-foreground">{project.details.highlights}</p>
+            <ul className="list-disc space-y-2 pl-5 text-muted-foreground">
+              {project.details.highlights.map((highlight) => (
+                <li key={highlight}>{highlight}</li>
+              ))}
+            </ul>
           </div>
           {project.details.note && (
             <div>

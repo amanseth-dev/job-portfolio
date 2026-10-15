@@ -219,7 +219,9 @@ export const projects = [
     details: {
       summary: 'Develop an engaging, client-side web application to test a user\'s knowledge on a topic.',
       role: 'Using just HTML, CSS, and JavaScript, I created a quiz app that features randomized multiple-choice questions, a timed interface, and immediate feedback, enhancing engagement and knowledge retention.',
-      highlights: 'A fun and interactive quiz application that runs entirely in the browser, demonstrating strong foundational skills in frontend development.',
+      highlights: [
+        'A fun and interactive quiz application that runs entirely in the browser, demonstrating strong foundational skills in frontend development.',
+      ],
     },
   },
   

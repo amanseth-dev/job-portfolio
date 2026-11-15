@@ -68,7 +68,7 @@ export default function Contact() {
               <div className="flex justify-center">
                 <Button asChild variant="outline">
                   <a href="https://meet.brevo.com/aman-seth" target="_blank" rel="noopener noreferrer">
-                    <CalendarDays className="mr-2 h-4 w-4" /> Book a Meeting
+                    <CalendarDays className="mr-2 h-4 w-4" /> Book a Call
                   </a>
                 </Button>
               </div>

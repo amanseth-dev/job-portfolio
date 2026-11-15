@@ -56,7 +56,7 @@ export default function Hero() {
             />
           </div>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            I build robust, scalable, and efficient backend solutions. With ~1.8 years of experience, I specialize in high-performance APIs and Spring Boot microservices.
+            I build robust, scalable, and efficient backend solutions. With 2+ years of experience, I specialize in high-performance APIs and Spring Boot microservices.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-x-6">
             <Button asChild size="lg">

@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Braces, Code, Server, Network, Database, Container, GitMerge, FileCode, Workflow, Puzzle, BrainCircuit, TestTube, Shield, ShipWheel, Package, Boxes } from 'lucide-react';
+import { Braces, Code, Server, Network, Database, Container, GitMerge, FileCode, Workflow, Puzzle, BrainCircuit, TestTube, Shield, ShipWheel, Package, Boxes, CreditCard } from 'lucide-react';
 
 export const projects = [
   {
@@ -314,8 +314,69 @@ export const experiences = [
     }
 ];
 
+export const services = [
+  {
+    slug: 'rest-api-mvp-backend',
+    title: 'REST API & MVP Backend',
+    promise: 'Turn your idea into a working, documented API.',
+    deliverables: [
+      'Clean REST APIs with validation, error handling, and Swagger/OpenAPI docs',
+      'Database design with MySQL and Spring Data JPA',
+      'Secure login using Spring Security and JWT',
+      'Unit tests and a Docker setup, ready to deploy',
+    ],
+    techStack: ['Java 17', 'Spring Boot', 'MySQL', 'Docker'],
+    proof: 'Built the backend APIs for a garage management system used by 20+ garages.',
+    icon: Server,
+    bookingUrl: 'https://meet.brevo.com/aman-seth/rest-api-amp-mvp-backend',
+  },
+  {
+    slug: 'payment-gateway-integration',
+    title: 'Payment Gateway Integration',
+    promise: 'Accept online payments without the headaches.',
+    deliverables: [
+      'Razorpay order creation and payment verification',
+      'Webhook handling to keep payment status in sync',
+      'Safe handling of failed and pending payments',
+    ],
+    techStack: ['Razorpay', 'Spring Boot', 'REST'],
+    proof: 'Integrated Razorpay into a platform with live garage payments.',
+    icon: CreditCard,
+    bookingUrl: 'https://meet.brevo.com/aman-seth/payment-gateway-integration',
+  },
+  {
+    slug: 'third-party-api-ondc-integration',
+    title: 'Third-Party API Integration',
+    promise: 'Connect your product to other platforms.',
+    deliverables: [
+      'External REST API integrations with timeouts, retries, and logging',
+      'ONDC network search and catalog flows',
+      'Results from multiple sellers or sources combined into one response',
+    ],
+    techStack: ['REST', 'Spring Boot'],
+    proof: 'Built an API that searches ONDC for auto spare parts and merges results from multiple sellers.',
+    icon: Network,
+    bookingUrl: 'https://meet.brevo.com/aman-seth/third-party-api-amp-ondc-integration',
+  },
+  {
+    slug: 'multi-tenant-saas-backend',
+    title: 'Multi-Tenant SaaS Backend',
+    promise: 'One platform, many customers, kept cleanly separate.',
+    deliverables: [
+      'Tenant-aware data model, signup, and login',
+      'Role-based access control',
+      'Scalable APIs designed to grow with new brands or locations',
+    ],
+    techStack: ['Spring Boot', 'Spring Security', 'Multi-tenancy', 'MySQL', 'Redis'],
+    proof: 'Built Caffeine Engine, a SaaS platform for cafe brands with multiple locations and 15+ REST APIs.',
+    icon: Boxes,
+    bookingUrl: 'https://meet.brevo.com/aman-seth/multi-tenant-saas-backend',
+  },
+];
+
 export const navLinks = [
   { name: 'Home', href: '#home' },
+  { name: 'Services', href: '#services' },
   { name: 'Projects', href: '#projects' },
   { name: 'Experience', href: '#experience' },
   { name: 'About', href: '#about' },

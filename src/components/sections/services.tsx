@@ -95,7 +95,7 @@ export default function Services() {
             </div>
             <div>
               <h3 className="font-semibold">Pricing</h3>
-              <p className="mt-1 text-sm text-muted-foreground">Hourly or fixed-price</p>
+              <p className="mt-1 text-sm text-muted-foreground">Hourly</p>
             </div>
             <div>
               <h3 className="font-semibold">Response time</h3>

@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import Link from 'next/link';
-import { Menu, Code, Download } from 'lucide-react';
+import { Menu, Code, Download, CalendarDays } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { navLinks } from '@/lib/data';
@@ -10,9 +10,13 @@ import { ThemeToggle } from '@/components/theme-toggle';
 import { useActiveSection } from '@/hooks/use-active-section';
 import { cn } from '@/lib/utils';
 
+const desktopNavLinkNames = new Set(['Services', 'Projects', 'Experience', 'About', 'Contact']);
+const desktopNavLinks = navLinks.filter((link) => desktopNavLinkNames.has(link.name));
+const bookCallUrl = 'https://meet.brevo.com/aman-seth';
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const sectionIds = navLinks.map(link => link.href.substring(1));
+  const sectionIds = useMemo(() => navLinks.map(link => link.href.substring(1)), []);
   const activeSection = useActiveSection(sectionIds);
 
   const handleMobileLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -36,56 +40,67 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center justify-between">
-        <div className="flex items-center">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Code className="h-6 w-6 text-primary" />
-            <span className="font-bold sm:inline-block">
-              Aman Kumar Seth
-            </span>
-          </Link>
-        </div>
+      <div className="container relative flex h-14 max-w-screen-2xl items-center justify-between gap-3">
+        <Link href="/" className="flex shrink-0 items-center space-x-2">
+          <Code className="h-6 w-6 text-primary" aria-hidden="true" />
+          <span className="font-bold lg:hidden">Aman</span>
+          <span className="hidden font-bold lg:inline">Aman Kumar Seth</span>
+        </Link>
 
-        <div className="hidden items-center gap-6 md:flex">
-          <nav className="flex gap-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className={cn(
-                  "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm",
-                  activeSection === link.href.substring(1)
-                    ? "text-primary font-semibold"
-                    : "text-foreground/60"
-                )}
-              >
-                {link.name}
-              </Link>
-            ))}
-          </nav>
-          <Button asChild variant="outline">
+        <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-4 lg:flex xl:gap-6">
+          {desktopNavLinks.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              className={cn(
+                "flex items-center text-sm font-medium transition-colors hover:text-foreground/80",
+                activeSection === link.href.substring(1)
+                  ? "text-primary font-semibold"
+                  : "text-foreground/60"
+              )}
+            >
+              {link.name}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="ml-auto hidden shrink-0 items-center gap-2 lg:flex">
+          <Button asChild variant="outline" size="sm">
             <a href="https://drive.google.com/file/d/1qiu4iB9ILnaCe3Qj6alL65nYMf0xMxbH/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <Download className="mr-2 h-4 w-4" /> Resume
+              <Download className="mr-2 h-4 w-4" aria-hidden="true" /> Resume
+            </a>
+          </Button>
+          <Button asChild size="sm">
+            <a href={bookCallUrl} target="_blank" rel="noopener noreferrer">
+              <CalendarDays className="mr-2 h-4 w-4" aria-hidden="true" />
+              Book a Call
             </a>
           </Button>
           <ThemeToggle />
         </div>
 
-        <div className="flex items-center justify-end md:hidden">
-          <ThemeToggle />
+        <div className="flex shrink-0 items-center gap-2 lg:hidden">
+          <Button asChild size="sm">
+            <a href={bookCallUrl} target="_blank" rel="noopener noreferrer">
+              Book a Call
+            </a>
+          </Button>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu />
+              <Button variant="ghost" size="icon" aria-label="Open navigation menu">
+                <Menu aria-hidden="true" />
                 <span className="sr-only">Open Menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
               <div className="flex flex-col p-6">
-                <Link href="/" className="mb-8 flex items-center space-x-2" onClick={() => setIsOpen(false)}>
-                  <Code className="h-6 w-6 text-primary" />
-                  <span className="font-bold">Aman Kumar Seth</span>
-                </Link>
+                <div className="mb-8 flex items-center justify-between">
+                  <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
+                    <Code className="h-6 w-6 text-primary" aria-hidden="true" />
+                    <span className="font-bold">Aman Kumar Seth</span>
+                  </Link>
+                  <ThemeToggle />
+                </div>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
                     <Link

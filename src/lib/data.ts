@@ -375,15 +375,12 @@ export const services = [
 ];
 
 export const navLinks = [
-  { name: 'Home', href: '#home' },
   { name: 'Services', href: '#services' },
   { name: 'Projects', href: '#projects' },
   { name: 'Experience', href: '#experience' },
   { name: 'About', href: '#about' },
-  { name: 'Education', href: '#education' },
   { name: 'Skills', href: '#skills' },
   { name: 'Achievements', href: '#achievements' },
-  { name: 'Certifications', href: '#certifications' },
   { name: 'Contact', href: '#contact' },
 ];
 

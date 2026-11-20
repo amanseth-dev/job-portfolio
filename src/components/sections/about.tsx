@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { certifications, education, trainings } from '@/lib/data';
 
 export default function About() {
   return (
@@ -36,6 +37,57 @@ export default function About() {
             <p className="mt-4 text-lg text-muted-foreground">
               My development philosophy is centered around writing clean, maintainable code and following an API-first approach. I believe in building backend systems that are powerful, reliable, and easy to extend.
             </p>
+            <details className="mt-6 rounded-lg border bg-background p-4">
+              <summary className="cursor-pointer font-semibold text-foreground">
+                Background
+                <span className="ml-2 text-sm font-normal text-muted-foreground">
+                  Education, training, and certificates
+                </span>
+              </summary>
+              <div className="mt-4 space-y-4 text-sm text-muted-foreground">
+                <div>
+                  <h3 className="font-medium text-foreground">Education</h3>
+                  <ul className="mt-1 space-y-1">
+                    {education.map((item) => (
+                      <li key={item.degree}>
+                        {item.degree} — {item.institution} ({item.duration})
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-medium text-foreground">Training</h3>
+                  <ul className="mt-1 space-y-1">
+                    {trainings.map((training) => (
+                      <li key={training.organisation}>
+                        {training.area} — {training.organisation}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-medium text-foreground">Certificates</h3>
+                  <ul className="mt-1 space-y-1">
+                    {certifications.map((certification) => (
+                      <li key={certification.title}>
+                        {certification.url ? (
+                          <a
+                            href={certification.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline underline-offset-4 hover:text-foreground"
+                          >
+                            {certification.title} — {certification.issuer}
+                          </a>
+                        ) : (
+                          `${certification.title} — ${certification.issuer}`
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </details>
           </div>
         </div>
       </div>

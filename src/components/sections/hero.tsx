@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="max-w-3xl mx-auto text-center">
         <div className="md:hidden">
           <h1 className="text-3xl font-bold tracking-tight text-foreground font-headline">
-            Hi, I&apos;m Aman. I build Spring Boot backends for startups.
+            Hi, I'm Aman, a Spring Boot backend developer building scalable, production-ready backend systems.
           </h1>
           <div className="mt-8 flex flex-col items-center justify-center gap-3">
             <Button asChild size="lg" className="w-full max-w-xs">

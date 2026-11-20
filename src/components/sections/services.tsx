@@ -36,7 +36,7 @@ export default function Services() {
             What I can build for you
           </h2>
           <p className="mt-2 text-lg leading-8 text-muted-foreground">
-            I&apos;m a Spring Boot backend developer taking on part-time projects. Here&apos;s where I can help most.
+            I’m a Spring Boot backend developer specializing in enterprise-grade application development, microservices architecture, RESTful APIs, and database design. Here are the areas where I can contribute most effectively.
           </p>
         </div>
 

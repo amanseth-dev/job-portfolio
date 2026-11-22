@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
 import MouseTrailer from '@/components/mouse-trailer';
+import Analytics from '@/components/analytics';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://amankrseth.netlify.app'),
@@ -82,6 +83,7 @@ export default function RootLayout({
         <meta name="google-site-verification" content="google5a9e663dd6fb17c2.htm" />
       </head>
       <body className="font-body antialiased">
+        <Analytics />
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
